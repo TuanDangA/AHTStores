@@ -206,27 +206,27 @@
         "padding_bottom": 36
       }
     },
-    "165614370335cd4e4d": {
-      "type": "image-banner",
+    "1656147036ca2072a8": {
+      "type": "image-banner-custom",
       "blocks": {
-        "1656143703b31a7327-0": {
+        "165614703676a1478c-0": {
           "type": "heading",
           "settings": {
             "heading": "Enjoy This Winter Trend",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
-        "1656143703b31a7327-1": {
+        "165614703676a1478c-1": {
           "type": "text",
           "settings": {
             "text": "Discover now latest collection",
             "text_style": "subtitle"
           }
         },
-        "2de89f23-5941-42b9-ad56-4b595718c10e": {
+        "165614703676a1478c-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Now",
+            "button_label_1": "Shop now",
             "button_link_1": "",
             "button_style_secondary_1": true,
             "button_label_2": "",
@@ -236,9 +236,9 @@
         }
       },
       "block_order": [
-        "1656143703b31a7327-0",
-        "1656143703b31a7327-1",
-        "2de89f23-5941-42b9-ad56-4b595718c10e"
+        "165614703676a1478c-0",
+        "165614703676a1478c-1",
+        "165614703676a1478c-2"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/download.jpg",
@@ -262,6 +262,6 @@
     "collage",
     "video",
     "multicolumn",
-    "165614370335cd4e4d"
+    "1656147036ca2072a8"
   ]
 }
