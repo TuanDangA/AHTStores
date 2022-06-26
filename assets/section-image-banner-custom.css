@@ -26,7 +26,7 @@
 
   .h1 {
     color: black;
-    font-size: calc(var(--font-heading-scale) * 2rem); 
+    font-size: calc(var(--font-heading-scale) * 1.5rem); 
   }
 
   .banner__text {
@@ -45,6 +45,8 @@
     color: gray;
     font-weight: 800;
     font-size: calc(var(--font-heading-scale) * 1rem); 
+    min-width: calc(9rem + var(--buttons-border-width) * 2);
+    min-height: calc(3rem + var(--buttons-border-width) * 2);
   }
 
 
