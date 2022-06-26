@@ -46,7 +46,7 @@
     font-weight: 800;
     font-size: calc(var(--font-heading-scale) * 1rem); 
     min-width: calc(9rem + var(--buttons-border-width) * 2);
-    min-height: calc(3rem + var(--buttons-border-width) * 2);
+    min-height: calc(2rem + var(--buttons-border-width) * 2);
   }
 
 
