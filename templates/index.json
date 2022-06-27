@@ -242,6 +242,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/download_1.jpg",
+        "image_2": "shopify:\/\/shop_images\/download.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "adapt_height_first_image": true,
