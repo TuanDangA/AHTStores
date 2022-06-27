@@ -33,7 +33,8 @@
   {%- if section.settings.image != blank and section.settings.image_2 == blank  -%}
     <div class="banner__media media{% if section.settings.image == blank and section.settings.image_2 == blank %} placeholder{% endif %}{% if section.settings.image_2 != blank %} banner__media-half{% endif %}">
       <img
-        srcset="{%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
+        srcset="
+          {%- if section.settings.image.width >= 375 -%}{{ section.settings.image | image_url: width: 375 }} 375w,{%- endif -%}
           {%- if section.settings.image.width >= 550 -%}{{ section.settings.image | image_url: width: 550 }} 550w,{%- endif -%}
           {%- if section.settings.image.width >= 750 -%}{{ section.settings.image | image_url: width: 750 }} 750w,{%- endif -%}
           {%- if section.settings.image.width >= 1100 -%}{{ section.settings.image | image_url: width: 1100 }} 1100w,{%- endif -%}
@@ -49,7 +50,7 @@
         alt="{{ section.settings.image.alt | escape }}"
         width="{{ section.settings.image.width }}"
         height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
-        {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
+        <!-- {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %} -->
       >
     </div>
   {%- elsif section.settings.image != blank and section.settings.image_2 != blank -%}
@@ -71,7 +72,7 @@
         alt="{{ section.settings.image.alt | escape }}"
         width="{{ section.settings.image.width }}"
         height="{{ section.settings.image.width | divided_by: section.settings.image.aspect_ratio }}"
-        {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %}
+        <!-- {% if section.settings.image_2 != blank %}class="banner__media-image-half"{% endif %} -->
       >
     </div>
   <!-- {%- elsif section.settings.image_2 == blank -%}
@@ -433,7 +434,7 @@
   ],
   "presets": [
     {
-      "name": "image-banner-custom",
+      "name": "image-bann   er-custom",
       "blocks": [
         {
           "type": "heading"
