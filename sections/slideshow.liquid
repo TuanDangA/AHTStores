@@ -106,7 +106,7 @@
               src="{{ block.settings.image | image_url: width: 1500 }}"
               loading="lazy"
               alt="{{ block.settings.image.alt | escape }}"
-              width=50vw;
+              width= "200px";
               height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio | round }}"
             >
           {%- else -%}
