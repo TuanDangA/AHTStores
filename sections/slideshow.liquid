@@ -103,7 +103,7 @@
               {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
               {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
               sizes="{% if blocks.slide.settings.width == "100%" %} 100vw {% elsif blocks.slide.settings.width == "50%" %} 50vw  {% elsif blocks.slide.settings.width == "25%" %} 25vw {% endif %}"
-              src="{{ block.settings.image | image_url: width: 1500 }}"
+              src="{{ block.settings.image | image_url: width: 500 }}"
               loading="lazy"
               alt="{{ block.settings.image.alt | escape }}"
               width= "200px"
