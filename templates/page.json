@@ -6,9 +6,111 @@
         "padding_top": 28,
         "padding_bottom": 28
       }
+    },
+    "1656476158a50e9fbb": {
+      "type": "collapsible-content",
+      "blocks": {
+        "1656476158b38e7b27-0": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Has Coronavirus affted Lusion Shop's Service?",
+            "icon": "none",
+            "row_content": "<p>a1<\/p>",
+            "page": ""
+          }
+        },
+        "1656476158b38e7b27-1": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Why did I only receive part of my order?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "1656476158b38e7b27-2": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What do I do if my order is damaged?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "1656476158b38e7b27-3": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I exchange my order?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "b4f239de-a411-4621-9356-a408285bd575": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "My discount code is not working, what do I do?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "4a78102b-6119-407c-9e81-748c6020b289": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Where are your products shipped from?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "ffcbfe89-9e4f-4386-b5d3-c8acbe7c7d35": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I expedite my shipping?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        },
+        "3ed8a13c-5b9e-43e4-b2d6-4902d2763e1e": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I received the wrong goods, what do I do?",
+            "icon": "none",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656476158b38e7b27-0",
+        "1656476158b38e7b27-1",
+        "1656476158b38e7b27-2",
+        "1656476158b38e7b27-3",
+        "b4f239de-a411-4621-9356-a408285bd575",
+        "4a78102b-6119-407c-9e81-748c6020b289",
+        "ffcbfe89-9e4f-4386-b5d3-c8acbe7c7d35",
+        "3ed8a13c-5b9e-43e4-b2d6-4902d2763e1e"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "background-1",
+        "container_color_scheme": "background-2",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1656476158a50e9fbb"
   ]
 }
