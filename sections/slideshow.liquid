@@ -80,7 +80,7 @@
         #Slide-{{ section.id }}-{{ forloop.index }} .banner__media::after{
           opacity: {{ block.settings.image_overlay_opacity | divided_by: 100.0 }};
         }
-      {%-  endstyle -%}
+      {%- endstyle -%}
       <div class="slideshow__slide grid__item grid--1-col slider__slide"
         id="Slide-{{ section.id }}-{{ forloop.index }}"
         {{ block.shopify_attributes }}
@@ -104,7 +104,7 @@
               {%- if block.settings.image.width >= 3000 -%}{{ block.settings.image | image_url: width: 3000 }} 3000w,{%- endif -%}
               {%- if block.settings.image.width >= 3840 -%}{{ block.settings.image | image_url: width: 3840 }} 3840w,{%- endif -%}
               {{ block.settings.image | image_url }} {{ block.settings.image.width }}w"
-              sizes="{% if blocks.settings.image_width == "100%" %} 100vw {% elsif blocks.settings.image_width == "50%" %} 50vw  {% elsif blocks.settings.image_width == "25%" %} 25vw {% endif %}"
+              sizes="{% if block.settings.image_width == "100%" %} 100vw {% elsif block.settings.image_width == "50%" %} 50vw  {% elsif block.settings.image_width == "25%" %} 25vw {% endif %}"
               src="{{ block.settings.image | image_url: width: 1500 }}"
               loading="lazy"
               alt="{{ block.settings.image.alt | escape }}"
