@@ -4,7 +4,7 @@
     {%- if section.settings.image_1 != blank -%}
         <div class="image">
             <img 
-                src="{{ section.settings.image_1 | image_url: width: 1500 }}" 
+                src="{{ section.settings.image_1 | image_url }}" 
                 alt=""
                 width= "100"
                 height="{{ section.settings.image_1.width | divided_by: section.settings.image_1.aspect_ratio }}"
