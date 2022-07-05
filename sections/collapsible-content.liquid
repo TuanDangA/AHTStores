@@ -74,9 +74,9 @@
                       </details>
                     </div>
                   {%- when 'buttons' -%}
-                    <div class="buttons" {{ block.shopify_attributes }}>
+                    <div class="buttons" {{ block.shopify_attributes }} >
                       {%- if block.settings.button_label != blank -%}
-                        <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true" {% else %} href="{{ block.settings.button_link }}" {% endif %} class="button{% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" > {{ block.settings.button_label | escape }} </a>
+                        <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true" {% else %} href="{{ block.settings.button_link }}" {% endif %} class="button {% if block.settings.button_style_secondary %} button--secondary{% else %} button--primary{% endif %}" > {{ block.settings.button_label | escape }} </a>
                       {%- endif -%}
                     </div>
               {%- endcase -%}
@@ -303,6 +303,7 @@
     {
       "type": "collapsible_row",
       "name": "t:sections.collapsible_content.blocks.collapsible_row.name",
+      "limit":10,
       "settings": [
         {
           "type": "text",
@@ -510,8 +511,7 @@
     {
       "type": "buttons",
       "name": "t:sections.collapsible_content.blocks.buttons.name",
-      "settings": 
-      [
+      "settings": [
         {
           "type": "text",
           "id": "button_label",
@@ -530,11 +530,11 @@
           "label": "t:sections.collapsible_content.blocks.buttons.settings.button_style_secondary.label"
         }
       ]
-    }
+    },
   ],
   "presets": [
     {
-      "name": "t:sections.collapsible_content.presets.name",
+      "name": "collapsible_content",
       "blocks": [
         {
           "type": "collapsible_row"
