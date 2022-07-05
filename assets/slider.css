@@ -19,13 +19,16 @@
 }
 
 .heading {
+    width: 100%;
     color: black;
     font-size: 35px;
     font-weight: 500;
     border: 1px solid black;
+    text-align: center;
 }
 
 .text {
+    text-align: center;
     width: 100%;
     border: 1px solid black;
 }

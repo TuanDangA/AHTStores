@@ -23,17 +23,39 @@
             >
         </div>
     {%- endif -%}
-    <div class="content">
+    <div class="content"
+        {% if section.settings.desktop_content_alignment == "left" %}
+            style="align-items;: left"
+        {% elsif section.settings.desktop_content_alignment == "right" %}
+            style="align-items;: right"
+        {% endif %}
+    >
         {%- for block in section.blocks -%}
 
             {%- case block.type -%}
                 {% when 'heading' %}
                     <div class="heading">
-                        <span>{{ block.settings.heading | escape }}</span>
+                        <span 
+                            {% if section.settings.desktop_content_alignment == "left" %}
+                                style="text-align: left"
+                            {% elsif section.settings.desktop_content_alignment == "right" %}
+                                style="text-align: right"
+                            {% endif %}
+                        >
+                            {{ block.settings.heading | escape }}
+                        </span>
                     </div>
                 {% when 'text' %}
                     <div class="text">
-                        <span>{{ block.settings.text | escape }}</span>
+                        <span
+                            {% if section.settings.desktop_content_alignment == "left" %}
+                                style="text-align: left"
+                            {% elsif section.settings.desktop_content_alignment == "right" %}
+                                style="text-align: right"
+                            {% endif %}
+                        >
+                            {{ block.settings.text | escape }}
+                        </span>
                     </div>
                 {% when 'buttons' %}
                     <div class="buttons">
