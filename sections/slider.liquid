@@ -28,14 +28,26 @@
 
             {%- case block.type -%}
                 {% when 'heading' %}
-                    <div class="heading">
-                        <span style="text-align: {{ section.settings.desktop_content_alignment }};">
+                    <div class="heading"
+                        {%- if section.settings.desktop_content_alignment != "flex-end" -%}
+                            style="text-align: {{ section.settings.desktop_content_alignment }};"
+                        {% else %}
+                            style="text-align: right;"
+                        {%- endif -%}
+                    >
+                        <span>
                             {{ block.settings.heading | escape }}
                         </span>
                     </div>
                 {% when 'text' %}
-                    <div class="text">
-                        <span style="text-align: {{ section.settings.desktop_content_alignment }};">
+                    <div class="text"
+                        {%- if section.settings.desktop_content_alignment != "flex-end" -%}
+                            style="text-align: {{ section.settings.desktop_content_alignment }};"
+                        {% else %}
+                            style="text-align: right;"
+                        {%- endif -%}
+                    >
+                        <span>
                             {{ block.settings.text | escape }}
                         </span>
                     </div>
