@@ -28,15 +28,15 @@
 
             {%- case block.type -%}
                 {% when 'heading' %}
-                    <div>
+                    <div class="heading">
                         <span>{{ block.settings.heading | escape }}</span>
                     </div>
                 {% when 'text' %}
-                    <div>
+                    <div class="text">
                         <span>{{ block.settings.text | escape }}</span>
                     </div>
                 {% when 'buttons' %}
-                    <div>
+                    <div class="buttons">
                         <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %}>{{ block.settings.button_label | escape }}</a>
                     </div>
             {%- endcase -%}
