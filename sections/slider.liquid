@@ -25,9 +25,9 @@
     {%- endif -%}
     <div class="content"
         {% if section.settings.desktop_content_alignment == "left" %}
-            style="align-items: left"
+            style="align-items: left !important"
         {% elsif section.settings.desktop_content_alignment == "right" %}
-            style="align-items: right"
+            style="align-items: right !important"
         {% endif %}
     >
         {%- for block in section.blocks -%}
@@ -37,9 +37,9 @@
                     <div class="heading">
                         <span 
                             {% if section.settings.desktop_content_alignment == "left" %}
-                                style="text-align: left"
+                                style="text-align: left !important"
                             {% elsif section.settings.desktop_content_alignment == "right" %}
-                                style="text-align: right"
+                                style="text-align: right !important"
                             {% endif %}
                         >
                             {{ block.settings.heading | escape }}
@@ -49,9 +49,9 @@
                     <div class="text">
                         <span
                             {% if section.settings.desktop_content_alignment == "left" %}
-                                style="text-align: left"
+                                style="text-align: left !important"
                             {% elsif section.settings.desktop_content_alignment == "right" %}
-                                style="text-align: right"
+                                style="text-align: right !important"
                             {% endif %}
                         >
                             {{ block.settings.text | escape }}
