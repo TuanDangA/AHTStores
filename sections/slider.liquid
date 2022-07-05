@@ -6,7 +6,7 @@
             <img 
                 src="{{ section.settings.image_1 | image_url }}" 
                 alt=""
-                width= "100"
+                width="{{ section.settings.image_1.width }}"
                 height="{{ section.settings.image_1.width | divided_by: section.settings.image_1.aspect_ratio }}"
                 loading="lazy"
             >
