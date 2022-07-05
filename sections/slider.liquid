@@ -1,9 +1,11 @@
 {{ 'slider.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'slider.js' | asset_url }}" async></script>
 
 <div class="container">
     {%- if section.settings.image_1 != blank -%}
         <div class="image">
             <img 
+                class="mySlides"
                 src="{{ section.settings.image_1 | image_url }}" 
                 alt=""
                 width="{{ section.settings.image_1.width }}"
@@ -15,6 +17,7 @@
     {%- if section.settings.image_2 != blank -%}
         <div class="image">
             <img 
+                class="mySlides"
                 src="{{ section.settings.image_2 | image_url }}" 
                 alt=""
                 width="{{ section.settings.image_2.width }}"
@@ -23,6 +26,8 @@
             >
         </div>
     {%- endif -%}
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
     <div class="content" style="align-items: {{ section.settings.desktop_content_alignment }}">
         {%- for block in section.blocks -%}
 
