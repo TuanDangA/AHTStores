@@ -345,21 +345,21 @@
         "1656995444c769f60c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Image Banner",
+            "heading": "Enjoy This Winter Trend",
             "heading_size": "Medium"
           }
         },
         "1656995444c769f60c-1": {
           "type": "text",
           "settings": {
-            "text": "abcde",
+            "text": "Discover now latest collections",
             "text_style": "body"
           }
         },
         "1656995444c769f60c-2": {
           "type": "buttons",
           "settings": {
-            "button_label": "shop now",
+            "button_label": "Shop Now",
             "button_link": ""
           }
         }
