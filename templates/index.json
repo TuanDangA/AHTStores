@@ -214,6 +214,7 @@
     },
     "1656147036ca2072a8": {
       "type": "image-banner-custom",
+      "disabled": true,
       "blocks": {
         "165614703676a1478c-0": {
           "type": "heading",
@@ -263,6 +264,7 @@
     },
     "16563864290650cf07": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16563864296073a1ce-0": {
           "type": "slide",
@@ -336,6 +338,43 @@
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
       }
+    },
+    "1656995444b28491a5": {
+      "type": "slider",
+      "blocks": {
+        "1656995444c769f60c-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image Banner",
+            "heading_size": "Medium"
+          }
+        },
+        "1656995444c769f60c-1": {
+          "type": "text",
+          "settings": {
+            "text": "abcde",
+            "text_style": "body"
+          }
+        },
+        "1656995444c769f60c-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label": "shop now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656995444c769f60c-0",
+        "1656995444c769f60c-1",
+        "1656995444c769f60c-2"
+      ],
+      "settings": {
+        "image_overlay_opacity": 0,
+        "banner_height": "medium",
+        "desktop_content_position": "middle-center",
+        "desktop_content_alignment": "center"
+      }
     }
   },
   "order": [
@@ -346,6 +385,7 @@
     "video",
     "multicolumn",
     "1656147036ca2072a8",
-    "16563864290650cf07"
+    "16563864290650cf07",
+    "1656995444b28491a5"
   ]
 }
