@@ -23,13 +23,7 @@
             >
         </div>
     {%- endif -%}
-    <div class="content"
-        {% if section.settings.desktop_content_alignment == "left" %}
-            style="align-items: left !important"
-        {% elsif section.settings.desktop_content_alignment == "right" %}
-            style="align-items: right !important"
-        {% endif %}
-    >
+    <div class="content" style="align-items: {{ section.settings.desktop_content_alignment }}">
         {%- for block in section.blocks -%}
 
             {%- case block.type -%}
@@ -37,9 +31,9 @@
                     <div class="heading">
                         <span 
                             {% if section.settings.desktop_content_alignment == "left" %}
-                                style="text-align: left !important"
+                                style="text-align: left"
                             {% elsif section.settings.desktop_content_alignment == "right" %}
-                                style="text-align: right !important"
+                                style="text-align: right"
                             {% endif %}
                         >
                             {{ block.settings.heading | escape }}
@@ -49,9 +43,9 @@
                     <div class="text">
                         <span
                             {% if section.settings.desktop_content_alignment == "left" %}
-                                style="text-align: left !important"
+                                style="text-align: left"
                             {% elsif section.settings.desktop_content_alignment == "right" %}
-                                style="text-align: right !important"
+                                style="text-align: right"
                             {% endif %}
                         >
                             {{ block.settings.text | escape }}
