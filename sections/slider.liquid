@@ -1,6 +1,9 @@
 {{ 'slider.css' | asset_url | stylesheet_tag }}
 
 <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
     function plusDivs(n) {
     showDivs(slideIndex += n);
     }
@@ -17,7 +20,7 @@
     }
 </script>
 
-<div class="container" onload="showDivs(1)">
+<div class="container">
     {%- if section.settings.image_1 != blank -%}
         <div class="image">
             <img 
