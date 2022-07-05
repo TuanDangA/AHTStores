@@ -22,12 +22,10 @@
     color: black;
     font-size: 35px;
     font-weight: 500;
-    border: 1px solid black;
 }
 
 .text {
     width: 100%;
-    border: 1px solid black;
 }
 
 .buttons {
