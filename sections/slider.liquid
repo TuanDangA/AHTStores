@@ -12,6 +12,17 @@
             >
         </div>
     {%- endif -%}
+    {%- if section.settings.image_2 != blank -%}
+        <div class="image">
+            <img 
+                src="{{ section.settings.image_2 | image_url: width: 1500 }}" 
+                alt=""
+                width="{{ section.settings.image_2.width }}"
+                height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}"
+                loading="lazy"
+            >
+        </div>
+    {%- endif -%}
     <div class="content">
         {%- for block in section.blocks -%}
 
@@ -23,6 +34,7 @@
                 {% when 'buttons' %}
                     <a {% if block.settings.button_link == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link }}"{% endif %}>{{ block.settings.button_label | escape }}</a>
             {%- endcase -%}
+
         {%- endfor -%}
     </div>
 </div>
