@@ -1,7 +1,7 @@
 .container {
     position: relative;
     width: 100%;
-    height: 1196.62px;
+    height: calc(100vw/1.6);
 }
 
 .image {
@@ -128,6 +128,10 @@ line-height: 100px;
 }
 
 @media all and (max-width: 420px) {
+    .container {
+        /* height: 233.8px; */
+    }
+
     .content {
         top: 35%;
         right: 10%;
@@ -152,6 +156,7 @@ line-height: 100px;
     }
 
     .w3-display-left, .w3-display-right {
+        top: 40%;
         width: 20px;
         height: 20px;
     }
