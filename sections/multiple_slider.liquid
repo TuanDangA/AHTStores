@@ -7,6 +7,17 @@
           {% if block.settings.slider_width != null %}
             style="width: {{ block.settings.slider_width }};"
           {% endif %}
+          {% case block.settings.desktop_content_position %}
+            {% when "top-left" %}
+            {% when "top-center" %}
+            {% when "top-right" %}
+            {% when "center-left" %}
+            {% when "center-center" %}
+            {% when "center-right" %}
+            {% when "bottom-left" %}
+            {% when "bottom-center" %}
+            {% when "bottom-right" %}
+          {% endcase %}
         >
             <img 
                 class="mySlides_image"
