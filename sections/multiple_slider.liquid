@@ -2,13 +2,13 @@
 
 <script>
   var slideIndex = 1;
-  showDivs(slideIndex);
+  showDivs1(slideIndex);
 
-  function plusDivs(n) {
+  function plusDivs1(n) {
     showDivs(slideIndex += n);
   }
 
-  function showDivs(n) {
+  function showDivs1(n) {
     var i;
     var x = document.getElementsByClassName("mySlides");
     if (n > x.length) {slideIndex = 1}
@@ -38,8 +38,8 @@
         </div>
       {%- endif -%}
     {% endfor %}
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <button class="w3-button w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs1(+1)">&#10095;</button>
 </div>
 
 {% schema %}
