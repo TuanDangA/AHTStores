@@ -1,0 +1,165 @@
+{{ 'multiple_slider.css' | asset_url | stylesheet_tag }}
+
+<script>
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+</script>
+
+<div class="container">
+    {% for block in section.blocks %}
+      {%- if block.settings.image != blank -%}
+        <div class="w3-display-container mySlides image">
+            <img 
+                class="mySlides"
+                src="{{ block.settings.image | image_url }}" 
+                alt=""
+                width="{{ block.settings.image.width }}"
+                height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
+                loading="lazy"
+            >
+            <div class="image_content">
+              {{ block.settings.heading }}
+            </div>
+        </div>
+      {%- endif -%}
+    {% endfor %}
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+</div>
+
+{% schema %}
+{
+  "name": "multiple_slider",
+  "class": "div",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "slider",
+      "name": "slider",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "default": "Slider content",
+          "label": "heading"
+        },
+        {
+          "type": "select",
+          "id": "slider_width",
+          "label": "slider_width",
+          "options": [
+            {
+              "value": "100%",
+              "label": "100%"
+            },
+            {
+              "value": "50%",
+              "label": "50%"
+            },
+            {
+              "value": "25%",
+              "label": "25%"
+            }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "desktop_content_alignment",
+          "label": "desktop_content_alignment",
+          "options": [
+            {
+              "value": "left",
+              "label": "left"
+            },
+            {
+              "value": "center",
+              "label": "center"
+            },
+            {
+              "value": "flex-end",
+              "label": "right"
+            }
+          ],
+          "default": "center"
+        },
+        {
+          "type": "select",
+          "id": "desktop_content_position",
+          "label": "desktop_content_position",
+          "options": [
+            {
+              "value": "top-left",
+              "label": "top-left"
+            },
+            {
+              "value": "top-center",
+              "label": "top-center"
+            },
+            {
+              "value": "top-right",
+              "label": "top-right"
+            },
+            {
+              "value": "middle-left",
+              "label": "middle-left"
+            },
+            {
+              "value": "middle-center",
+              "label": "middle-center"
+            },
+            {
+              "value": "middle-right",
+              "label": "middle-right"
+            },
+            {
+              "value": "bottom-left",
+              "label": "bottom-left"
+            },
+            {
+              "value": "bottom-center",
+              "label": "bottom-center"
+            },
+            {
+              "value": "bottom-right",
+              "label": "bottom-right"
+            }
+          ],
+          "default": "middle-center"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "multiple-slider",
+      "blocks": [
+        {
+          "type": "slider"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %} 
