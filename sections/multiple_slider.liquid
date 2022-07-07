@@ -1,38 +1,26 @@
 {{ 'multiple_slider.css' | asset_url | stylesheet_tag }}
 
-<script>
-  var slideIndex = 1;
-  showDivs1(slideIndex);
-
-  function plusDivs1(n) {
-    showDivs(slideIndex += n);
-  }
-
-  function showDivs1(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = x.length}
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";  
-    }
-    x[slideIndex-1].style.display = "block";  
-  }
-</script>
-
 <div class="container">
     {% for block in section.blocks %}
       {%- if block.settings.image != blank -%}
-        <div class="w3-display-container mySlides image">
+        <div class="w3-display-container mySlides1 "
+          {% if block.settings.slider_width !=" null" %}
+            style="width: {{ block.settings.slider_width }};"
+          {% endif %}
+        >
             <img 
-                class="mySlides"
+                class="mySlides_image"
                 src="{{ block.settings.image | image_url }}" 
-                alt=""
+                alt="slider error!"
                 width="{{ block.settings.image.width }}"
                 height="{{ block.settings.image.width | divided_by: block.settings.image.aspect_ratio }}"
                 loading="lazy"
             >
-            <div class="image_content">
+            <div class="image_content"
+              {% if block.settings.desktop_content_alignment !=" null" %}
+                style="align-content: {{ block.settings.desktop_content_alignment }};"
+              {% endif %}
+            >
               {{ block.settings.heading }}
             </div>
         </div>
@@ -41,6 +29,35 @@
     <button class="w3-button w3-display-left" onclick="plusDivs1(-1)">&#10094;</button>
     <button class="w3-button w3-display-right" onclick="plusDivs1(+1)">&#10095;</button>
 </div>
+
+<script>
+  var slideIndex = 1;
+  
+  showDivs1(slideIndex);
+
+  function plusDivs1(n) {
+    showDivs1(slideIndex += n);
+  }
+
+  function showDivs1(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides1");
+    if(x.length > 1) {
+      for(i=1; i<x.length; i++){
+        x[i].style.position = "absolute";
+        x[i].style.top = 0;
+        x[i].style.left = 0;
+      }
+    }
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+      console.log(x[i]);
+    }
+    x[slideIndex-1].style.display = "block";  
+  }
+</script>
 
 {% schema %}
 {
@@ -53,7 +70,8 @@
       "type": "slider",
       "name": "slider",
       "limit": 3,
-      "settings": [
+      "settings": 
+      [
         {
           "type": "image_picker",
           "id": "image",

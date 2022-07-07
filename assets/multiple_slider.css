@@ -1,8 +1,31 @@
 .container {
     width: 100%;
     height: calc(100vw/1.6);
+    position: relative;
 }
 
-.mySlides {
-    display:none;
+.mySlides1 {
+    width: 100%;
+    height: 100%;
+}
+
+.mySlides1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.w3-display-right {
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    width: 70px;
+    height: 55px;
+}
+
+.w3-display-left {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+    width: 70px;
+    height: 55px;
 }
