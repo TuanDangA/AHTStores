@@ -128,9 +128,6 @@
 }
 
 @media all and (max-width: 420px) {
-    .container {
-        /* height: 233.8px; */
-    }
 
     .content {
         top: 35%;
