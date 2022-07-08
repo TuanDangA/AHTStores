@@ -389,7 +389,7 @@
             "heading": "abcd",
             "slider_width": "100%",
             "desktop_content_alignment": "center",
-            "desktop_content_position": "middle-center"
+            "desktop_content_position": "top:44%;right:10%;"
           }
         },
         "c67eba68-36b9-43bf-ae0a-5b55a8339df7": {
@@ -399,7 +399,7 @@
             "heading": "acv",
             "slider_width": "100%",
             "desktop_content_alignment": "center",
-            "desktop_content_position": "middle-center"
+            "desktop_content_position": "top:44%;right:10%;"
           }
         }
       },
