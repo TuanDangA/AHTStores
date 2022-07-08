@@ -4,8 +4,8 @@
     {% for block in section.blocks %}
       {%- if block.settings.image != blank -%}
         <div class="w3-display-container mySlides1 "
-          {% if block.settings.slider_width != null or block.settings.desktop_content_position != null %}
-            style="width: {{ block.settings.slider_width }};{{ block.settings.desktop_content_position }};"
+          {% if block.settings.slider_width != null  %}
+            style="width: {{ block.settings.slider_width }};"
           {% endif %}
         >
             <img 
@@ -17,8 +17,8 @@
                 loading="lazy"
             >
             <div class="image_content"
-              {% if block.settings.desktop_content_alignment != null %}
-                style="text-align:  {{ block.settings.desktop_content_alignment }};"
+              {% if block.settings.desktop_content_alignment != null or block.settings.desktop_content_position != null %}
+                style="text-align:  {{ block.settings.desktop_content_alignment }};position:absolute;{{ block.settings.desktop_content_position }};"
               {% endif %}
             >
               {{ block.settings.heading }}
