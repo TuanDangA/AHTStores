@@ -264,12 +264,11 @@
     },
     "16563864290650cf07": {
       "type": "slideshow",
-      "disabled": true,
       "blocks": {
         "16563864296073a1ce-0": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_1.jpg",
+            "image": "shopify:\/\/shop_images\/banner1.jpg",
             "heading": "",
             "image_width": "100%",
             "heading_size": "h1",
@@ -288,9 +287,9 @@
         "16563864296073a1ce-1": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download.jpg",
+            "image": "shopify:\/\/shop_images\/banner2.jpg",
             "heading": "",
-            "image_width": "50%",
+            "image_width": "100%",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Women Collection",
@@ -307,9 +306,9 @@
         "eebf9fcc-5144-42f9-b76f-d67ec86d623d": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/download_1.jpg",
+            "image": "shopify:\/\/shop_images\/banner3.jpg",
             "heading": "",
-            "image_width": "50%",
+            "image_width": "100%",
             "heading_size": "h1",
             "subheading": "",
             "button_label": "Men Collection",
@@ -341,7 +340,6 @@
     },
     "1656995444b28491a5": {
       "type": "slider",
-      "disabled": true,
       "blocks": {
         "1656995444c769f60c-0": {
           "type": "heading",
@@ -375,8 +373,8 @@
         "image_2": "shopify:\/\/shop_images\/images_2.jpg",
         "image_overlay_opacity": 0,
         "banner_height": "medium",
-        "desktop_content_position": "middle-center",
-        "desktop_content_alignment": "center"
+        "desktop_content_position": "top-left",
+        "desktop_content_alignment": "flex-end"
       }
     },
     "1657164679061e55d6": {
@@ -386,10 +384,10 @@
           "type": "slider",
           "settings": {
             "image": "shopify:\/\/shop_images\/download_1.jpg",
-            "heading": "abcd",
-            "slider_width": "100%",
+            "heading": "abcded",
+            "slider_width": "50%",
             "desktop_content_alignment": "center",
-            "desktop_content_position": "top:44%;right:10%;"
+            "desktop_content_position": "top:15%;left:46%;"
           }
         },
         "c67eba68-36b9-43bf-ae0a-5b55a8339df7": {
