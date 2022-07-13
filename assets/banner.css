@@ -30,3 +30,9 @@
     top: 35%;
     border: 1px solid black;
 }
+
+.header {
+    font-size: 80px;
+    text-align: center;
+    width: 100%;
+}
