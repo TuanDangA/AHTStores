@@ -1,27 +1,27 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.banner_image != null %}
-    <div class="container">
-        <img 
+    <div class="container" style="background-image: ;">
+        <!-- <img 
             src="{{ section.settings.banner_image | image_url }}" 
             alt=""
             loading="lazy"
             width="{{ section.settings.banner_image.width }}"
             height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
-        >
+        > -->
         <div class="content_container">
             {% for block in section.blocks %}
-            {% case block.type %}
-                {% when 'heading' %}
-                    <div class="header">
-                        {{ section.settings.heading }}
-                    </div>
-                {% when 'buttons' %}
-                    <div class="button">
-                        <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
-                    </div>
-            {% endcase %}
-        {% endfor %}
+                {% case block.type %}
+                    {% when 'heading' %}
+                        <div class="header">
+                            {{ section.settings.heading }}
+                        </div>
+                    {% when 'buttons' %}
+                        <div class="button">
+                            <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
+                        </div>
+                {% endcase %}
+            {% endfor %}
         </div>
     </div>
 {% endif %}
