@@ -12,5 +12,6 @@
 
 .content_container {
     position: absolute;
-    
+    width: 80%;
+    height: 80%;
 }
