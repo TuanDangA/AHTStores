@@ -432,7 +432,8 @@
       ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/banner1.jpg",
-        "heading": "S-S  2018 Shoe Collection",
+        "season": "S-S 2018",
+        "heading": "Shoe Collection",
         "button_text": "Shop Now",
         "text_align": "center"
       }
