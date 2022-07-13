@@ -11,10 +11,11 @@
 }
 
 .content_container {
+    position: absolute;
     width: 80%;
     height: 80%;
-    margin-top: 10%;
-    margin-left: 10%;
+    top: 10%;
+    left: 10%;
     align-items: center;
     border: 1px solid black;
     filter: brightness(100%);
