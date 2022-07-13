@@ -9,8 +9,10 @@
             width="{{ section.settings.banner_image.width }}"
             height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
         >
-        {% for block in collection %}
-            
+        {% for block in section.blocks %}
+            {% if condition %}
+                
+            {% endif %}
         {% endfor %}
     </div>
 {% endif %}
