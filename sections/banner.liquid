@@ -12,9 +12,13 @@
         {% for block in section.blocks %}
             {% case block.type %}
                 {% when 'heading' %}
-                    
+                    <div class="header">
+
+                    </div>
                 {% when 'buttons' %}
-                    
+                    <div class="button">
+                        <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
+                    </div>
             {% endcase %}
         {% endfor %}
     </div>
