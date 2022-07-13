@@ -1,7 +1,7 @@
 {{ 'banner.css' | asset_url | stylesheet_tag }}
 
 {% if section.settings.banner_image != null %}
-    <div class="container" style="background-image: {{ section.settings.banner_image | image_url }};">
+    <div class="container" style="background-image: {{ section.settings.banner_image | image_url }}">
         <!-- <img 
             src="{{ section.settings.banner_image | image_url }}" 
             alt=""
