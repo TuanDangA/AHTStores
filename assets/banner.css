@@ -14,8 +14,8 @@
     position: absolute;
     width: 80%;
     height: 80%;
-    top: 10%;
-    left: 10%;
+    margin-top: 10%;
+    margin-left: 10%;
     align-items: center;
     border: 1px solid black;
     filter: brightness(100%);
