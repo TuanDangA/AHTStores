@@ -10,18 +10,20 @@
             height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
         > -->
         <div class="content_container">
-            {% for block in section.blocks %}
-                {% case block.type %}
-                    {% when 'heading' %}
-                        <div class="header">
-                            {{ section.settings.heading }}
-                        </div>
-                    {% when 'buttons' %}
-                        <div class="button">
-                            <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
-                        </div>
-                {% endcase %}
-            {% endfor %}
+            <div class="content">
+                {% for block in section.blocks %}
+                    {% case block.type %}
+                        {% when 'heading' %}
+                            <div class="header">
+                                {{ section.settings.heading }}
+                            </div>
+                        {% when 'buttons' %}
+                            <div class="button">
+                                <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
+                            </div>
+                    {% endcase %}
+                {% endfor %}
+            </div>
         </div>
     </div>
 {% endif %}
