@@ -24,7 +24,7 @@
                             </div>
                         {% when 'buttons' %}
                             <div class="button">
-                                <a href="{{ section.blocks.button.settings.button_url | escape }}">{{ section.settings.button_text }}</a>
+                                <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
                             </div>
                     {% endcase %}
                 {% endfor %}
