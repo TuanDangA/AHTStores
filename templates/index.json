@@ -264,6 +264,7 @@
     },
     "16563864290650cf07": {
       "type": "slideshow",
+      "disabled": true,
       "blocks": {
         "16563864296073a1ce-0": {
           "type": "slide",
@@ -340,6 +341,7 @@
     },
     "1656995444b28491a5": {
       "type": "slider",
+      "disabled": true,
       "blocks": {
         "1656995444c769f60c-0": {
           "type": "heading",
@@ -379,6 +381,7 @@
     },
     "1657164679061e55d6": {
       "type": "multiple_slider",
+      "disabled": true,
       "blocks": {
         "1657164679056839e4-0": {
           "type": "slider",
