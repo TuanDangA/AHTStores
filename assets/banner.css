@@ -18,4 +18,5 @@
     left: 10%;
     align-items: center;
     border: 1px solid black;
+    filter: brightness(100%);
 }
