@@ -9,11 +9,12 @@
             width="{{ section.settings.banner_image.width }}"
             height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
         >
-        {% for block in section.blocks %}
+        <div class="content_container">
+            {% for block in section.blocks %}
             {% case block.type %}
                 {% when 'heading' %}
                     <div class="header">
-                        {{ }}
+                        {{ section.settings.heading }}
                     </div>
                 {% when 'buttons' %}
                     <div class="button">
@@ -21,6 +22,7 @@
                     </div>
             {% endcase %}
         {% endfor %}
+        </div>
     </div>
 {% endif %}
 
