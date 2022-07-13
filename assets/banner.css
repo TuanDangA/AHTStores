@@ -36,3 +36,10 @@
     text-align: center;
     width: 100%;
 }
+
+.button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    color: black;
+}
