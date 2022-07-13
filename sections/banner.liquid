@@ -9,12 +9,9 @@
             width="{{ section.settings.banner_image.width }}"
             height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
         >
-        <div class="header">
-
-        </div>
-        <div class="button">
-            <a href="{{ section.blocks.button.settings.button_url }}">{{ section.settings.button_text }}</a>
-        </div>
+        {% for block in collection %}
+            
+        {% endfor %}
     </div>
 {% endif %}
 
