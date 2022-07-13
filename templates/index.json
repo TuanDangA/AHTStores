@@ -422,7 +422,7 @@
         "165771998707585c15-1": {
           "type": "buttons",
           "settings": {
-            "button_url": "shopify:\/\/products\/frogs"
+            "button_url": "shopify:\/\/pages\/about-us"
           }
         }
       },
