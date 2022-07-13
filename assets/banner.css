@@ -30,6 +30,11 @@
     text-align: center;
 }
 
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
 .header_text, .season {
     display: block;
     font-size: 80px;
