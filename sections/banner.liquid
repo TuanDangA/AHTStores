@@ -2,6 +2,26 @@
 
 {% schema %}
 {
-    "name": "banner_shoes"
+    "name": "banner_shoes",
+    "class": "banner",
+    "tag": "div",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "banner_image",
+            "label": "banner image"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "heading"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "button text",
+            "default": "Shop Now"
+        }
+    ]
 }
 {% endschema %}
