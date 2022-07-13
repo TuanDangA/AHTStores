@@ -410,6 +410,32 @@
       ],
       "settings": {
       }
+    },
+    "1657719987b9a84edf": {
+      "type": "banner",
+      "blocks": {
+        "165771998707585c15-0": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "165771998707585c15-1": {
+          "type": "buttons",
+          "settings": {
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "165771998707585c15-0",
+        "165771998707585c15-1"
+      ],
+      "settings": {
+        "banner_image": "shopify:\/\/shop_images\/banner3.jpg",
+        "heading": "abc",
+        "button_text": "Shop Now",
+        "text_align": "center"
+      }
     }
   },
   "order": [
@@ -422,6 +448,7 @@
     "1656147036ca2072a8",
     "16563864290650cf07",
     "1656995444b28491a5",
-    "1657164679061e55d6"
+    "1657164679061e55d6",
+    "1657719987b9a84edf"
   ]
 }
