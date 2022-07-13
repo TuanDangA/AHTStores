@@ -2,6 +2,7 @@
     width: 100%;
     height: calc(100vw/1.6);
     position: relative;
+    filter: brightness(50%);
 }
 
 .container img {
