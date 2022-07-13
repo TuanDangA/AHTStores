@@ -6,8 +6,8 @@
             src="{{ section.settings.banner_image | image_url }}" 
             alt=""
             loading="lazy"
-            width="{{ section.settings.image_2.width }}"
-            height="{{ section.settings.image_2.width | divided_by: section.settings.image_2.aspect_ratio }}"
+            width="{{ section.settings.banner_image.width }}"
+            height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
         >
     </div>
 {% endif %}
