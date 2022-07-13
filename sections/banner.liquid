@@ -3,7 +3,7 @@
 {% if section.settings.banner_image != null %}
     <div class="container">
         <img 
-            src="{{ section.settings.banner_image }}" 
+            src="{{ section.settings.banner_image | image_url }}" 
             alt=""
         >
     </div>
