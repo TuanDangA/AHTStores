@@ -4,7 +4,7 @@
     position: relative;
     filter: brightness(100%);
     transition: all 1s;
-    overflow: scroll;
+    overflow: hidden;
 }
 
 .container img {
