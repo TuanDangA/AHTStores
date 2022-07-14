@@ -31,13 +31,11 @@
                                 {% endif %}
                             </div>
                         {% when 'buttons' %}
-                            <div class="button">
-                                <a href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a>
-                            </div>
-                                {% if block.settings.button_text != blank %}
-                                    
-                                {% endif %}
-                            
+                            {% if block.settings.button_text != blank %}
+                                <div class="button">
+                                    <a href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a>
+                                </div>
+                            {% endif %}
                     {% endcase %}
                 {% endfor %}
             </div>
