@@ -10,12 +10,11 @@
                             {{ block.settings.header_line_1 }}
                         </div>
                     {% endif %}
-                    {% if condition %}
-                        
+                    {% if block.settings.header_line_2 != blank %}
+                        <div class="heading_line_2">
+                            {{ block.settings.header_line_2 }}
+                        </div>
                     {% endif %}
-                    <div class="heading_line_2">
-                        {{ block.settings.header_line_2 }}
-                    </div>
                 </div>
             {%- when 'text' -%}
                 <div class="info_details">
