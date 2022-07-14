@@ -13,7 +13,32 @@
                     </div>
                 </div>
             {%- when 'text' -%}
-                
+                <div class="info_details">
+                    <div class="phone">
+                        <div class="title">
+                            Phone
+                        </div>
+                        <div class="content">
+                            {{ section.blocks.details_info.settings.phone }}
+                        </div>
+                    </div>
+                    <div class="address">
+                        <div class="title">
+                            Address
+                        </div>
+                        <div class="content">
+                            {{ section.blocks.details_info.settings.address }}
+                        </div>
+                    </div>
+                    <div class="email">
+                        <div class="title">
+                            Email
+                        </div>
+                        <div class="content">
+                            {{ section.blocks.Details_info.settings.email }}
+                        </div>
+                    </div>
+                </div>
         {%- endcase -%}
     {% endfor %}
 
