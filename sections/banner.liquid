@@ -13,9 +13,10 @@
         {%- else -%}
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
+        {% if section.blocks.size > 0 %}
         <div class="content_container">
             <div class="content">
-                {% if section.blocks.size > 0 %}
+                
                     {% for block in section.blocks %}
                         {% case block.type %}
                             {% when 'heading' %}
