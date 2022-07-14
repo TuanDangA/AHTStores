@@ -43,10 +43,6 @@
     font-size: 13px;
 }
 
-.notes {
-    text-align: center;
-}
-
 .map {
     margin-top: 4vh;
     width: 100%;
@@ -57,5 +53,10 @@
     border: none;
     width: 100%;
     height: 100%;
+}
+
+.notes {
+    margin-top: 2vh;
+    text-align: center;
 }
 
