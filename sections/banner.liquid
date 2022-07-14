@@ -14,35 +14,34 @@
             {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
         {% if section.blocks.size > 0 %}
-        <div class="content_container">
-            <div class="content">
-                
-                    {% for block in section.blocks %}
-                        {% case block.type %}
-                            {% when 'heading' %}
-                                <div class="header">
-                                    {% if block.settings.season != blank %}
-                                        <div class="season">
-                                            {{ block.settings.season }}
-                                        </div>
-                                    {% endif %}
-                                    {% if block.settings.heading != blank %}
-                                        <div class="header_text">
-                                            {{ block.settings.heading }}
-                                        </div>
-                                    {% endif %}
-                                </div>
-                            {% when 'buttons' %}
-                                {% if block.settings.button_text != blank %}
-                                    <div class="button">
-                                        <a href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a>
+            <div class="content_container">
+                <div class="content">
+                        {% for block in section.blocks %}
+                            {% case block.type %}
+                                {% when 'heading' %}
+                                    <div class="header">
+                                        {% if block.settings.season != blank %}
+                                            <div class="season">
+                                                {{ block.settings.season }}
+                                            </div>
+                                        {% endif %}
+                                        {% if block.settings.heading != blank %}
+                                            <div class="header_text">
+                                                {{ block.settings.heading }}
+                                            </div>
+                                        {% endif %}
                                     </div>
-                                {% endif %}
-                        {% endcase %}
-                    {% endfor %}
-                {% endif %}
+                                {% when 'buttons' %}
+                                    {% if block.settings.button_text != blank %}
+                                        <div class="button">
+                                            <a href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a>
+                                        </div>
+                                    {% endif %}
+                            {% endcase %}
+                        {% endfor %}
+                </div>
             </div>
-        </div>
+        {% endif %}
     </div>
 {% endif %}
 
