@@ -73,9 +73,12 @@
     border: 2px solid white;
 }
 
-.container:hover .button {
+.container:hover .button::after {
     color: white;
     border: 1px solid white;
+}
+
+.container:hover .button::after {
     z-index: 10;
 }
 
