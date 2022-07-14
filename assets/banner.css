@@ -76,9 +76,11 @@
 .container:hover .content_container .button {
     color: white;
     border: 1px solid white;
+}
+.container:hover .content_container .button a{
+
     z-index: 9999;
 }
-
 /* .container:hover {
     filter: brightness(50%);
     z-index: 0;
