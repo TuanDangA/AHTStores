@@ -3,21 +3,21 @@
 <div class="container">
     {% for block in section.blocks %}
         {%- case block.type -%}
-            {%- when condition -%}
-                
+            {%- when 'heading' -%}
+                <div class="heading">
+                    <div class="heading_line_1">
+                        {{ section.blocks.details_header.settings.header_line_1 }}
+                    </div>
+                    <div class="heading_line_2">
+                        {{ section.blocks.details_header.settings.header_line_2 }}
+                    </div>
+                </div>
             {%- else -%}
                 
         {%- endcase -%}
     {% endfor %}
 
-    <div class="heading">
-        <div class="heading_line_1">
-            {{ section.blocks.details_header.settings.header_line_1 }}
-        </div>
-        <div class="heading_line_2">
-            {{ section.blocks.details_header.settings.header_line_2 }}
-        </div>
-    </div>
+    
     
     <div class="info_details">
         <div class="phone">
