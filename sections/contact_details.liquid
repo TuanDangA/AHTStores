@@ -18,14 +18,19 @@
                 </div>
             {%- when 'text' -%}
                 <div class="info_details">
-                    <div class="phone">
-                        <div class="title_info">
-                            PHONE
+                    {% if block.settings.phone != blank %}
+                        <div class="phone">
+                            <div class="title_info">
+                                PHONE
+                            </div>
+                            <div class="content">
+                                {{ block.settings.phone }}
+                            </div>
                         </div>
-                        <div class="content">
-                            {{ block.settings.phone }}
-                        </div>
-                    </div>
+                    {% endif %}
+                    {% if condition %}
+                        
+                    {% endif %}
                     <div class="address">
                         <div class="title_info">
                             ADDRESS
