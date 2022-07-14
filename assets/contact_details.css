@@ -19,17 +19,17 @@
     margin-bottom: 20px;
 }
 
+.heading_line_1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
 .phone, .email, .address {
     display: flex;
     flex-direction: column;
     width: 15%;
     height: auto;
     text-align: center;
-}
-
-.heading_line_1{
-    font-weight: 600;
-    font-size: 30px;
 }
 
 .title_info {
