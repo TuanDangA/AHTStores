@@ -49,7 +49,7 @@
     border: none;
 }
 
-.container:hover {
+.container:hover::before {
     background-color: #0000003d;
-    
+
 }
