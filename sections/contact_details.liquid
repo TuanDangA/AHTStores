@@ -4,53 +4,54 @@
     {% for block in section.blocks %}
         {%- case block.type -%}
             {%- when 'heading' -%}
-                {% if  block.settings.header_line_1 != blank  %}
-                    
+                {% if  block.settings.header_line_1 != blank or block.settings.header_line_2 != blank  %}
+                    <div class="heading">
+                        {% if block.settings.header_line_1 != blank %}
+                            <div class="heading_line_1">
+                                {{ block.settings.header_line_1 }}
+                            </div>
+                        {% endif %}
+                        {% if block.settings.header_line_2 != blank %}
+                            <div class="heading_line_2">
+                                {{ block.settings.header_line_2 }}
+                            </div>
+                        {% endif %}
+                    </div>
                 {% endif %}
-                <div class="heading">
-                    {% if block.settings.header_line_1 != blank %}
-                        <div class="heading_line_1">
-                            {{ block.settings.header_line_1 }}
-                        </div>
-                    {% endif %}
-                    {% if block.settings.header_line_2 != blank %}
-                        <div class="heading_line_2">
-                            {{ block.settings.header_line_2 }}
-                        </div>
-                    {% endif %}
-                </div>
             {%- when 'text' -%}
                 <div class="info_details">
-                    {% if block.settings.phone != blank %}
-                        <div class="phone">
-                            <div class="title_info">
-                                PHONE
+                    {% if block.settings.phone != blank or block.settings.address != blank or block.settings.email != blank %}
+                        {% if block.settings.phone != blank %}
+                            <div class="phone">
+                                <div class="title_info">
+                                    PHONE
+                                </div>
+                                <div class="content">
+                                    {{ block.settings.phone }}
+                                </div>
                             </div>
-                            <div class="content">
-                                {{ block.settings.phone }}
+                        {% endif %}
+                        {% if block.settings.address != null %}
+                            <div class="address">
+                                <div class="title_info">
+                                    ADDRESS
+                                </div>
+                                <div class="content">
+                                    {{ block.settings.address }}
+                                </div>
                             </div>
-                        </div>
+                        {% endif %}
+                        {% if block.settings.email != null %}
+                            <div class="email">
+                                <div class="title_info">
+                                    EMAIL
+                                </div>
+                                <div class="content">
+                                    {{ block.settings.email }}
+                                </div>
+                            </div>
+                        {% endif %}
                     {% endif %}
-                    {% if block.settings.address != null %}
-                        <div class="address">
-                            <div class="title_info">
-                                ADDRESS
-                            </div>
-                            <div class="content">
-                                {{ block.settings.address }}
-                            </div>
-                        </div>
-                    {% endif %}
-                   {% if block.settings.email != null %}
-                        <div class="email">
-                            <div class="title_info">
-                                EMAIL
-                            </div>
-                            <div class="content">
-                                {{ block.settings.email }}
-                            </div>
-                        </div>
-                   {% endif %}
                 </div>
             {%- when 'navigation' -%}
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.314514679084!2d105.78179631492932!3d21.020097893449915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4c50a6bcf7%3A0x6a91f7f04869ae43!2sArrowHiTech%20Jsc!5e0!3m2!1svi!2s!4v1657779355326!5m2!1svi!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
