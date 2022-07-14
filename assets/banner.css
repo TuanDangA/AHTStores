@@ -17,6 +17,8 @@
     top: 5%;
     left: 5%;
     border: 1px solid black;
+    background-color: white;
+    z-index: 2;
 }
 
 .content {
