@@ -64,9 +64,11 @@
                                 {{ block.settings.note_1 }}
                             </div>
                         {% endif %}
-                        <div class="note_2">
-                            {{ block.settings.note_2 }}
-                        </div>
+                        {% if block.settings.note_2 != blank %}
+                            <div class="note_2">
+                                {{ block.settings.note_2 }}
+                            </div>
+                        {% endif %}
                     </div>
                 {% endif %}  
         {%- endcase -%}
