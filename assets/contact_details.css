@@ -1,4 +1,7 @@
-
+.container {
+    width: 100%;
+    height: auto;
+}
 
 .info_details {
     display: flex;
