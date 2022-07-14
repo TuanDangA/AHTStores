@@ -64,12 +64,12 @@
 }
 
 .container:hover::before {
-    opacity: 5;
+    opacity: 2;
 }
 
 .container:hover .content_container {
     color: white;
-    z-index: 2;
+    z-index: 3;
     border: 2px solid white;
 }
 
