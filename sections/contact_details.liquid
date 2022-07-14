@@ -2,7 +2,12 @@
 
 <div class="container">
     {% for block in section.blocks %}
-        
+        {%- case block.type -%}
+            {%- when condition -%}
+                
+            {%- else -%}
+                
+        {%- endcase -%}
     {% endfor %}
 
     <div class="heading">
