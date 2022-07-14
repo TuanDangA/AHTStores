@@ -17,4 +17,5 @@
 
 .phone, .email, .address {
     width: calc(10vw/3);
+    height: auto;
 }
