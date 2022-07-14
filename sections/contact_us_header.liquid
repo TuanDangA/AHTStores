@@ -1,18 +1,21 @@
 {{ 'contact_us_header.css' | asset_url | stylesheet_tag }}
 
 <div class="container">
-    <div class="header_row">
-        {{ section.settings.header }}
-    </div>
-    <div class="seo">
-        {{ section.settings.seo}}
-    </div>
+   {% if section.settings.header != blank %}
+        <div class="header_row">
+            {{ section.settings.header }}
+        </div>
+   {% endif %}
+    {% if section.settings.seo != blank %}
+        <div class="seo">
+            {{ section.settings.seo }}
+        </div>
+    {% endif %}
 </div>
 
 {% schema %}
 {
     "name": "Contact us header",
-    "tag": "div",
     "settings": [
         {
             "type": "text",
@@ -27,8 +30,7 @@
     ],
     "presets": [
         {
-            "name": "Contact us header",
-            "blocks": []
+            "name": "Contact us header"
         }
     ]
 }
