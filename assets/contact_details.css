@@ -1,6 +1,8 @@
 .container_contact_details {
-    width: 100%;
+    width: 58%;
     height: auto;
+    margin-left: 21%;
+    border: 1px solid black;
 }
 
 .info_details {
