@@ -73,7 +73,7 @@
     border: 2px solid white;
 }
 
-.container:hover .button::after {
+.container:hover .button {
     color: white;
     border: 1px solid white;
 }
