@@ -2,7 +2,9 @@
 
 {% if section.settings.banner_image != null %}
     <div class="container">
-        
+        {% if section.settings.banner_image != blank %}
+            
+        {% endif %}
         <div class="content_container">
             <div class="content">
                 {% for block in section.blocks %}
