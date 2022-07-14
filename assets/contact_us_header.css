@@ -10,7 +10,7 @@
 .header_row {
     width: 100%;
     height: auto;
-    margin-top: 5vh;
+    margin-top: 7vh;
     font-size: 4vw;
     FONT-WEIGHT: 600;
     letter-spacing: 0.3vw;
@@ -21,7 +21,7 @@
     width: 100%;
     height: auto;
     font-size: 1.5vw;
-    margin-bottom: 8vh;
+    margin-bottom: 10vh;
     margin-top: 1vh;
     word-spacing: 0.5vw;
 }
