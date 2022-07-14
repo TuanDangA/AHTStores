@@ -51,7 +51,6 @@
     border: none;
 }
 
-/* .container::before {
-    background-color: #0000003d;
+.container:hover {
     opacity: 0.5;
-} */
+}
