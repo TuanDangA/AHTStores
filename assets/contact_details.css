@@ -16,7 +16,7 @@
 }
 
 .phone, .email, .address {
-    width: calc(10vw/3);
+    width: 33%;
     height: auto;
     text-align: center;
 }
