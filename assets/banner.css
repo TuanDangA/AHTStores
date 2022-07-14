@@ -73,6 +73,10 @@
     border: 2px solid white;
 }
 
+.container:hover .buttons {
+    color: white;
+}
+
 
 /* .container:hover {
     filter: brightness(50%);
