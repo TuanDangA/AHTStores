@@ -425,7 +425,7 @@
           "type": "buttons",
           "settings": {
             "button_text": "Shop Now",
-            "button_url": "shopify:\/\/products\/san-pham-gift-card"
+            "button_url": "shopify:\/\/collections\/all"
           }
         }
       },
