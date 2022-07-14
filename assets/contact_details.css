@@ -44,7 +44,7 @@
 iframe {
     margin-top: 4vh;
     width: 100%;
-    min-height: 20vh;
+    min-height: 300px;
     border: none;
 }
 
