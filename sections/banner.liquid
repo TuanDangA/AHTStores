@@ -20,9 +20,11 @@
                                         {{ block.settings.season }}
                                     </div>
                                 {% endif %}
-                                <div class="header_text">
-                                    {{ block.settings.heading }}
-                                </div>
+                                {% if block.settings.heading != blank %}
+                                    <div class="header_text">
+                                        {{ block.settings.heading }}
+                                    </div>
+                                {% endif %}
                             </div>
                         {% when 'buttons' %}
                             <div class="button">
