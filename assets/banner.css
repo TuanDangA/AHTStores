@@ -79,7 +79,7 @@
 }
 
 .container:hover .content_container .button a{
-    z-index: 9999;
+    z-index: 3;
 }
 /* .container:hover {
     filter: brightness(50%);
