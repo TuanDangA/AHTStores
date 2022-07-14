@@ -32,10 +32,12 @@
                             </div>
                         {% when 'buttons' %}
                             <div class="button">
+                                <a href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a>
+                            </div>
                                 {% if block.settings.button_text != blank %}
                                     
                                 {% endif %}
-                            </div>
+                            
                     {% endcase %}
                 {% endfor %}
             </div>
