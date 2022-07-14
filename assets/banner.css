@@ -54,6 +54,6 @@
 .container:hover {
     filter: brightness(50%);
     .content_container {
-        
+       border: 1px solid white; 
     }
 }
