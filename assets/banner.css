@@ -77,8 +77,8 @@
     color: white;
     border: 1px solid white;
 }
-.container:hover .content_container .button a{
 
+.container:hover .content_container .button a{
     z-index: 9999;
 }
 /* .container:hover {
