@@ -1,6 +1,6 @@
 {{ 'contact_details.css' | asset_url | stylesheet_tag }}
 
-<div class="container">
+<div class="container_">
     {% for block in section.blocks %}
         {%- case block.type -%}
             {%- when 'heading' -%}
