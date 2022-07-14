@@ -48,11 +48,3 @@
     color: black;
     border: none;
 }
-
-.button:after {
-    border: none;
-}
-
-.button:before {
-    border: none;
-}
