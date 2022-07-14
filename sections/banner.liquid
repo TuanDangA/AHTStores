@@ -15,11 +15,11 @@
                     {% case block.type %}
                         {% when 'heading' %}
                             <div class="header">
-                                <div class="season">
-                                    {{ block.settings.season }}
-                                </div>
+                                {% if condition %}
+                                    
+                                {% endif %}
                                 <div class="header_text">
-                                    {{ section.settings.heading }}
+                                    {{ block.settings.heading }}
                                 </div>
                             </div>
                         {% when 'buttons' %}
