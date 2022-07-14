@@ -67,7 +67,8 @@
 }
 
 .container:hover .content_container {
-    
+    color: white;
+    z-index: 2;
 }
 
 /* .container:hover {
