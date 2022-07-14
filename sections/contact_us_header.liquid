@@ -1,8 +1,8 @@
 {{ 'contact_us_header.css' | asset_url | stylesheet_tag }}
 
 <div class="container">
-    <div class="header">
-        {{ section.settings.header }}
+    <div class="header_row">
+        {{ section.settings.header_row }}
     </div>
     <div class="seo">
         {{ section.settings.seo}}
@@ -17,7 +17,7 @@
     "settings": [
         {
             "type": "text",
-            "id": "header",
+            "id": "header_row",
             "label": "Contact Us header"
         },
         {
