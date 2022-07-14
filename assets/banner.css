@@ -52,7 +52,7 @@
 
 .container:hover {
     filter: brightness(50%);
-    z-index: 1;
+    z-index: 0;
 }
 
 .container:hover .content_container {
