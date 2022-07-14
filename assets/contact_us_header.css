@@ -3,7 +3,13 @@
     height: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+
+.header {
+
+}
+
+.seo {
+    text-align: center;
 }
 
