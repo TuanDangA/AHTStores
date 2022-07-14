@@ -6,10 +6,10 @@
             {%- when 'heading' -%}
                 <div class="heading">
                     <div class="heading_line_1">
-                        {{ section.blocks.details_header.settings.header_line_1 }}
+                        {{ block.settings.header_line_1 }}
                     </div>
                     <div class="heading_line_2">
-                        {{ section.blocks.details_header.settings.header_line_2 }}
+                        {{ block.settings.header_line_2 }}
                     </div>
                 </div>
             {%- when 'text' -%}
@@ -19,7 +19,7 @@
                             Phone
                         </div>
                         <div class="content">
-                            {{ section.blocks.details_info.settings.phone }}
+                            {{ block.settings.phone }}
                         </div>
                     </div>
                     <div class="address">
