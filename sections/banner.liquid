@@ -16,7 +16,7 @@
                         {% when 'heading' %}
                             <div class="header">
                                 <div class="season">
-                                    {{ section.settings.season }}
+                                    {{ block.settings.season }}
                                 </div>
                                 <div class="header_text">
                                     {{ section.settings.heading }}
@@ -25,7 +25,7 @@
                         {% when 'buttons' %}
                             <div class="button">
                                 <!-- <a{% if block.settings.button_link_2 == blank %} role="link" aria-disabled="true"{% else %} href="{{ block.settings.button_link_2 }}"{% endif %} class="button{% if block.settings.button_style_secondary_2 %} button--secondary{% else %} button--primary{% endif %}">{{ block.settings.button_label_2 | escape }}</a> -->
-                                <a href="{{ block.settings.button_url }}">{{ section.settings.button_text }}</a>
+                                <a href="{{ block.settings.button_url }}">{{ block.settings.button_text }}</a>
                             </div>
                     {% endcase %}
                 {% endfor %}
@@ -43,7 +43,7 @@
         {
             "type": "image_picker",
             "id": "banner_image",
-            "label": "banner image"
+            "label": "Banner image"
         },
         {
             "type": "select",
