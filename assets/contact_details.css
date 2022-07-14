@@ -16,6 +16,8 @@
 }
 
 .phone, .email, .address {
+    display: flex;
+    flex-direction: column;
     width: 33%;
     height: auto;
     text-align: center;
