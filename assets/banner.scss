@@ -3,6 +3,7 @@
     height: calc(100vw/1.6);
     position: relative;
     filter: brightness(100%);
+    transition: filter 2s;
 }
 
 .container img {
