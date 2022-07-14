@@ -50,7 +50,9 @@
     border: none;
 }
 
-.container:hover {
+.container:
+
+/* .container:hover {
     filter: brightness(50%);
     z-index: 0;
 }
@@ -58,4 +60,4 @@
 .container:hover .content_container {
     border: 2px solid rgb(255, 255, 255); 
     z-index: 2;
-}
+} */
