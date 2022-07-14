@@ -417,11 +417,14 @@
         "165771998707585c15-0": {
           "type": "heading",
           "settings": {
+            "season": "S-S 2018",
+            "heading": "Shoes Collection"
           }
         },
         "165771998707585c15-1": {
           "type": "buttons",
           "settings": {
+            "button_text": "Shop Now",
             "button_url": "shopify:\/\/products\/san-pham-gift-card"
           }
         }
@@ -432,9 +435,6 @@
       ],
       "settings": {
         "banner_image": "shopify:\/\/shop_images\/banner1.jpg",
-        "season": "S-S 2018",
-        "heading": "Shoe Collection",
-        "button_text": "Shop Now",
         "text_align": "center"
       }
     }
