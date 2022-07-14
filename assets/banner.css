@@ -62,7 +62,7 @@
     z-index: 1;
 }
 
-.container::before:hover {
+.container:hover::before {
     opacity: 5;
 }
 
