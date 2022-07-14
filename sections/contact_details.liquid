@@ -57,17 +57,16 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.314514679084!2d105.78179631492932!3d21.020097893449915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab4c50a6bcf7%3A0x6a91f7f04869ae43!2sArrowHiTech%20Jsc!5e0!3m2!1svi!2s!4v1657779355326!5m2!1svi!2s" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             {% when 'notes' %}
-                {% if block.settings.note_1  %}
-                    
-                {% endif %}
-                <div class="notes">
-                    <div class="note_1">
-                        {{ block.settings.note_1 }}
+                {% if block.settings.note_1 != blank or block.settings.note_2 != blank %}
+                    <div class="notes">
+                        <div class="note_1">
+                            {{ block.settings.note_1 }}
+                        </div>
+                        <div class="note_2">
+                            {{ block.settings.note_2 }}
+                        </div>
                     </div>
-                    <div class="note_2">
-                        {{ block.settings.note_2 }}
-                    </div>
-                </div>
+                {% endif %}  
         {%- endcase -%}
     {% endfor %}
 </div>
