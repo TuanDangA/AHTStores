@@ -15,4 +15,6 @@
     text-align: center;
 }
 
-.phone
+.phone, .email, .address {
+    width: calc(10vw/3);
+}
