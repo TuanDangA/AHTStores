@@ -62,8 +62,8 @@
     z-index: 1;
 }
 
-.container:hover {
-    
+.container::before:hover {
+    opacity: 5;
 }
 
 /* .container:hover {
