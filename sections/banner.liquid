@@ -2,7 +2,7 @@
 
 {% if section.settings.banner_image != null %}
     <div class="container">
-        {% if section.settings.banner_image != blank %}
+        {%- if section.settings.banner_image != blank -%}
             <img 
                 src="{{ section.settings.banner_image | image_url }}" 
                 alt=""
@@ -11,7 +11,7 @@
                 height="{{ section.settings.banner_image.width | divided_by: section.settings.banner_image.aspect_ratio }}"
             >
         {%- else -%}
-             
+            {{ 'product-1' | placeholder_svg_tag }}
         {% endif %}
         <div class="content_container">
             <div class="content">
