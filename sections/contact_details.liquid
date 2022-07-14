@@ -53,7 +53,8 @@
                         {{ section.blocks.notes.settings.note_2 }}
                     </div>
                 </div>
-            when
+            {% when 'notes' %}
+            
         {%- endcase -%}
     {% endfor %}
 
