@@ -28,17 +28,17 @@
                             </div>
                         </div>
                     {% endif %}
-                    {% if condition %}
-                        
+                    {% if block.settings.address != null %}
+                        <div class="address">
+                            <div class="title_info">
+                                ADDRESS
+                            </div>
+                            <div class="content">
+                                {{ block.settings.address }}
+                            </div>
+                        </div>
                     {% endif %}
-                    <div class="address">
-                        <div class="title_info">
-                            ADDRESS
-                        </div>
-                        <div class="content">
-                            {{ block.settings.address }}
-                        </div>
-                    </div>
+                   
                     <div class="email">
                         <div class="title_info">
                             EMAIL
