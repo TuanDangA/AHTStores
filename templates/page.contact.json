@@ -24,11 +24,53 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "16577804038f245268": {
+      "type": "contact_details",
+      "blocks": {
+        "1657780403c31a0136-0": {
+          "type": "heading",
+          "settings": {
+            "header_line_1": "Contact detail",
+            "header_line_2": "Way is there to get clothing you’re sure to love than by making it"
+          }
+        },
+        "1657780403c31a0136-1": {
+          "type": "text",
+          "settings": {
+            "phone": "01: +84 01122000",
+            "address": "1800 Abbot Kinney Blvd. Unit D, Venice",
+            "email": "amelystore@gmail.com"
+          }
+        },
+        "1657780403c31a0136-2": {
+          "type": "navigation",
+          "settings": {
+            "navigation_url": ""
+          }
+        },
+        "1657780403c31a0136-3": {
+          "type": "notes",
+          "settings": {
+            "note_1": "",
+            "note_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "1657780403c31a0136-0",
+        "1657780403c31a0136-1",
+        "1657780403c31a0136-2",
+        "1657780403c31a0136-3"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
     "16577766359289077c",
-    "form"
+    "form",
+    "16577804038f245268"
   ]
 }
