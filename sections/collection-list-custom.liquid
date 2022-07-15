@@ -1,6 +1,7 @@
 {% schema %}
 {
     "name": "Collection list custom",
+    "max_blocks": 15,
     "settings": [
         {
             "type": "text",
@@ -16,6 +17,13 @@
             "max": 5,
             "step": 1,
             "default": 3
+        }
+    ],
+    "blocks": [
+        {
+            "type": "featured_collection",
+            "name": "Featured collection",
+            "settings": []
         }
     ]
 }
