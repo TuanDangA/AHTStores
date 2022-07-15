@@ -1,5 +1,16 @@
 {% schema %}
 {
-    "name": "Collection list custom"
+    "name": "Collection list custom",
+    "settings": [
+        {
+            "type": "range",
+            "id": "col_num",
+            "label": "Collumn Number",
+            "min": 1,
+            "max": 5,
+            "step": 1,
+            "default": 3
+        }
+    ]
 }
 {% endschema %}
