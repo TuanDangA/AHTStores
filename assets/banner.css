@@ -79,6 +79,7 @@
 .container:hover .content_container a{
     z-index: 3;
     color: white;
+    transition: all 1s;
 }
 
 .container:hover .content_container a:hover{
