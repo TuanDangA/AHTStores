@@ -83,12 +83,3 @@
 .container:hover .content_container .button a{
     z-index: 3;
 }
-/* .container:hover {
-    filter: brightness(50%);
-    z-index: 0;
-}
-
-.container:hover .content_container {
-    border: 2px solid rgb(255, 255, 255); 
-    z-index: 2;
-} */
