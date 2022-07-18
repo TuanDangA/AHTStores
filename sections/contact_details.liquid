@@ -20,8 +20,8 @@
                 {% endif %}
             {%- when 'text' -%}
                 <div class="info_details">
-                    {% if block.settings.phone != blank or block.settings.address != blank or block.settings.email != blank %}
-                        {% if block.settings.phone != blank %}
+                    {% if block.settings.details_label_1 != blank or block.settings.details_label_2 != blank or block.settings.details_label_3 != blank %}
+                        {% if block.settings.phone != details_label_1 %}
                             <div class="phone">
                                 <div class="title_info">
                                     PHONE
