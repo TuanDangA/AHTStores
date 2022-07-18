@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                         {% endif %}
-                        {% if block.settings.address != null %}
+                        {% if block.settings.address != blank %}
                             <div class="address">
                                 <div class="title_info">
                                     ADDRESS
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                         {% endif %}
-                        {% if block.settings.email != null %}
+                        {% if block.settings.email != blank %}
                             <div class="email">
                                 <div class="title_info">
                                     EMAIL
