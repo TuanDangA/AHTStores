@@ -21,7 +21,7 @@
             {%- when 'text' -%}
                 <div class="info_details">
                     {% if block.settings.details_label_1 != blank or block.settings.details_label_2 != blank or block.settings.details_label_3 != blank %}
-                        {% if block.settings.phone != details_label_1 %}
+                        {% if block.settings.details_label_1 != blank %}
                             <div class="phone">
                                 <div class="title_info">
                                     PHONE
@@ -31,7 +31,7 @@
                                 </div>
                             </div>
                         {% endif %}
-                        {% if block.settings.address != blank %}
+                        {% if block.settings.details_label_2 != blank %}
                             <div class="address">
                                 <div class="title_info">
                                     ADDRESS
@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                         {% endif %}
-                        {% if block.settings.email != blank %}
+                        {% if block.settings.details_label_3 != blank %}
                             <div class="email">
                                 <div class="title_info">
                                     EMAIL
