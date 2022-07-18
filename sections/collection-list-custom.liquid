@@ -5,12 +5,11 @@
     if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
       assign show_mobile_slider = true
     endif
--%}
-{%- liquid
     assign columns = section.blocks.size
     if columns > 3
     assign columns = 3
     endif
+
 -%}
 {{ section.settings.heading }}
 {% if columns >=1 %}
