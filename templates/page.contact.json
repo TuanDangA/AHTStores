@@ -60,6 +60,18 @@
     },
     "form": {
       "type": "contact-form",
+      "blocks": {
+        "736f3f90-7704-435a-8574-c7b515582589": {
+          "type": "notes",
+          "settings": {
+            "note_1": "Get in touch with us",
+            "note_2": "Way is there to get clothing you’re sure to love than by making it your know"
+          }
+        }
+      },
+      "block_order": [
+        "736f3f90-7704-435a-8574-c7b515582589"
+      ],
       "settings": {
         "heading": "",
         "heading_size": "h1",
