@@ -82,5 +82,5 @@
 }
 
 .container:hover .content_container a:hover{
-    text-decoration: ;
+    text-decoration: underline;
 }
