@@ -45,7 +45,7 @@
     width: 100%;
 }
 
-.button {
+.container .content_container a {
     background-color: transparent;
     font-size: 1.5vw;
     color: black;
