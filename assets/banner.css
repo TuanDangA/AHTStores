@@ -77,4 +77,5 @@
 
 .container:hover .content_container .button a{
     z-index: 3;
+    color: white;
 }
