@@ -18,8 +18,21 @@
   <div class="contact page-width page-width--narrow section-{{ section.id }}-padding">
     {% for block in section.blocks %}
       {% case block.type %}
-        {% when condition %}
-          
+        {% when "" %}
+        {% if block.settings.note_1 != blank or block.settings.note_2 != blank %}
+        <div class="notes">
+            {% if block.settings.note_1 != blank %}
+                <div class="note_1">
+                    {{ block.settings.note_1 }}
+                </div>
+            {% endif %}
+            {% if block.settings.note_2 != blank %}
+                <div class="note_2">
+                    {{ block.settings.note_2 }}
+                </div>
+            {% endif %}
+        </div>
+      {% endif %}  
         {% else %}
           
       {% endcase %}
