@@ -1,6 +1,4 @@
-.contact {
-  padding: 0;
-}
+
 
 .contact img {
   max-width: 100%;
@@ -62,5 +60,9 @@
 
 .note_2 {
   font-size: 1.5rem;
+}
+
+.contact {
+  padding: 0;
 }
 
