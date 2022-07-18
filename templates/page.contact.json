@@ -27,9 +27,12 @@
         "1657780403c31a0136-1": {
           "type": "text",
           "settings": {
-            "phone": "01: +84 01122000",
-            "address": "1800 Abbot KinneyBlvd. Unit D, Venice",
-            "email": "amelystore@gmail.com"
+            "details_label_1": "Phone",
+            "details_content_1": "0965367815",
+            "details_label_2": "Address",
+            "details_content_2": "HN",
+            "details_label_3": "Email",
+            "details_content_3": "tuananhdangktqd@gmail.com"
           }
         },
         "1657780403c31a0136-2": {
