@@ -75,11 +75,7 @@
     border: 2px solid white;
 }
 
-.container:hover .content_container .button {
-    color: white;
-    border: none;
-}
-
 .container:hover .content_container .button a{
     z-index: 3;
+    text-decoration: none;
 }
