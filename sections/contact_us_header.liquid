@@ -44,7 +44,17 @@
     }
 </style>
   
-  {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
+  
+
+<div class="container">
+   {% if section.settings.header != blank %}
+        <div class="header_row">
+            {{ section.settings.header }}
+        </div>
+   {% endif %}
+    {% if section.settings.seo != blank %}
+        <div class="seo">
+            {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
   {%- assign t = template | split: '.' | first -%}
   
   <nav class="breadcrumbs" role="navigation" aria-label="breadcrumbs">
@@ -109,16 +119,6 @@
     </ol>
   </nav>
   {%- endunless -%}
-
-<div class="container">
-   {% if section.settings.header != blank %}
-        <div class="header_row">
-            {{ section.settings.header }}
-        </div>
-   {% endif %}
-    {% if section.settings.seo != blank %}
-        <div class="seo">
-            {{ section.settings.seo }}
         </div>
     {% endif %}
 </div>
