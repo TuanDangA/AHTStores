@@ -1,11 +1,11 @@
 
-{%- liquid
+<!-- {%- liquid
     assign columns_mobile_int = section.settings.columns_mobile | plus: 0
     assign show_mobile_slider = false
     if section.settings.swipe_on_mobile and section.blocks.size > columns_mobile_int
       assign show_mobile_slider = true
     endif
--%}
+-%} -->
 {%- liquid
     assign columns = section.blocks.size
     if columns > 3
