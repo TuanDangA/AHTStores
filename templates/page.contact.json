@@ -11,8 +11,7 @@
     "16577766359289077c": {
       "type": "contact_us_header",
       "settings": {
-        "header": "CONTACT US",
-        "seo": "HOME \/ CONTACT US"
+        "header": "CONTACT US"
       }
     },
     "16577804038f245268": {
@@ -28,8 +27,8 @@
         "1657780403c31a0136-1": {
           "type": "text",
           "settings": {
-            "phone": "01: +84 01122000",
-            "address": "1800 Abbot Kinney Blvd. Unit D, Venice",
+            "phone": "",
+            "address": "1800 Abbot KinneyBlvd. Unit D, Venice",
             "email": "amelystore@gmail.com"
           }
         },
