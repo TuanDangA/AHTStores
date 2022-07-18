@@ -75,7 +75,7 @@
     border: 2px solid white;
 }
 
-.container:hover .content_container .button a{
+.container:hover .content_container a{
     z-index: 3;
     color: white;
 }
