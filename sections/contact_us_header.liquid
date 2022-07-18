@@ -52,7 +52,6 @@
             {{ section.settings.header }}
         </div>
    {% endif %}
-    {% if section.settings.seo != blank %}
         <div class="seo">
             {%- unless template == 'index' or template == 'cart' or template == 'list-collections' or template == '404' -%}
             {%- assign t = template | split: '.' | first -%}
@@ -120,7 +119,6 @@
             </nav>
             {%- endunless -%}
         </div>
-    {% endif %}
 </div>
 
 {% schema %}
