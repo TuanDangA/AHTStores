@@ -80,3 +80,7 @@
     z-index: 3;
     color: white;
 }
+
+.container:hover .content_container a:hover{
+    text-decoration: ;
+}
