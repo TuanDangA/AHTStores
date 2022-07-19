@@ -7,10 +7,6 @@
     flex-direction: column;
 }
 
-.featured-blog-custom-header {
+.featured-blog-custom-header, .featured-blog-custom-sub-header {
     text-align: center;
-}
-
-.featured-blog-custom-sub-header {
-    
 }
