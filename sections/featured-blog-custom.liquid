@@ -25,7 +25,9 @@
               <a href="{{ article.url }}">{{ article.title }}</a>
             </div>
             <div class="blog-post-sub_title">
-              <i class="fa-solid fa-calendar"></i> &nbsp; {{ article.created_at | date: "%b %d, %Y" }} &emsp;
+              {% if condition %}
+                <i class="fa-solid fa-calendar"></i> &nbsp; {{ article.created_at | date: "%b %d, %Y" }} &emsp;
+              {% endif %}
               <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
             </div>
             <div class="blog-post-excerpt">
