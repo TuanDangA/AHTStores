@@ -12,7 +12,7 @@
     {% endif %}
   </div>
   <div class="featured-blog-custom-posts">
-    {% for article in section.settings.blog.articles %}
+    {% for article in section.settings.blog.articles limit: 3 %}
       
     {% endfor %}
   </div>
