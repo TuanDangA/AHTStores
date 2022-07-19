@@ -441,6 +441,7 @@
     },
     "165803183497ca8f6a": {
       "type": "collection-list-custom",
+      "disabled": true,
       "blocks": {
         "1658031834a95ec361-0": {
           "type": "featured_collection",
