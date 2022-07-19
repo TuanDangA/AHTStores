@@ -13,8 +13,8 @@
     {% endif %}
   </div>
   <div class="featured-blog-custom-posts">
-    {% paginate collection.products by 12 %}
-      {% for article in section.settings.blog.articles limit: 3 %}
+    {% paginate section.settings.blog.articles by 3 %}
+      {% for article in section.settings.blog.articles %}
         <div class="blog-post">
           <div class="blog-post-img">
             <a href="{{ article.url }}">
