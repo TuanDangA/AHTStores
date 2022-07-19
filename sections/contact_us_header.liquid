@@ -18,7 +18,7 @@
             {%- case t -%}
                 {%- when 'page' -%}
                     <li class="breadcrumbs__item">
-                       <a class="breadcrumbs__link" href="{{ page.url }}" aria-current="page"> {{ page.title }}</a>
+                       <p class="breadcrumbs__link" aria-current="page"> {{ page.title }}</p>
                     </li>
                 {%- when 'product' -%}
                     {%- if collection.url -%}
