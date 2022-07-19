@@ -29,11 +29,7 @@
               <i class="fa-solid fa-calendar"></i> &nbsp; {{ article.created_at | date: "%b %d, %Y" }} &emsp;
             {% endif %}
             {% if section.settings.show_comments == true %}
-              {% if section.settings.blog.comments_enabled? == true %}
-                <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
-                {% else %}
-                  The comment function has not been activated.
-              {% endif %}
+              <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
             {% endif %}
           </div>
           <div class="blog-post-excerpt">
@@ -72,7 +68,17 @@
     {
       "type": "checkbox",
       "id": "show_comments",
-      "label": "Show Comments"
+      "label": "Show Comments",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "post_num",
+      "label": "Number of post allowed to show",
+      "min": 0,
+      "max": 6,
+      "step": 1,
+      "default": 3
     },
     {
       "type": "blog",
