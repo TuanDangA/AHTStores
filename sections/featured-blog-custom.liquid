@@ -13,33 +13,35 @@
     {% endif %}
   </div>
   <div class="featured-blog-custom-posts">
+    {% paginate collection.products by 12 %}
     {% for article in section.settings.blog.articles limit: 3 %}
-        <div class="blog-post">
-          <div class="blog-post-img">
-            <a href="{{ article.url }}">
-              <img src="{{ article.image | img_url: 'medium' }}" alt="">
-            </a>
-          </div>
-          <div class="blog-post-content">
-            <div class="blog-post-title">
-              <a href="{{ article.url }}">{{ article.title }}</a>
-            </div>
-            <div class="blog-post-sub_title">
-              {% if section.settings.show_date == true %}
-                <i class="fa-solid fa-calendar"></i> &nbsp; {{ article.created_at | date: "%b %d, %Y" }} &emsp;
-              {% endif %}
-              {% if blog.comments_enabled? == true %}
-                <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
-                {% else %}
-                  The comment function has not been activated.
-              {% endif %}
-            </div>
-            <div class="blog-post-excerpt">
-              <a href="{{ article.url }}">{{ article.excerpt }}... Read more</a>
-            </div>
-          </div>
+    <div class="blog-post">
+      <div class="blog-post-img">
+        <a href="{{ article.url }}">
+          <img src="{{ article.image | img_url: 'medium' }}" alt="">
+        </a>
+      </div>
+      <div class="blog-post-content">
+        <div class="blog-post-title">
+          <a href="{{ article.url }}">{{ article.title }}</a>
         </div>
-    {% endfor %}
+        <div class="blog-post-sub_title">
+          {% if section.settings.show_date == true %}
+            <i class="fa-solid fa-calendar"></i> &nbsp; {{ article.created_at | date: "%b %d, %Y" }} &emsp;
+          {% endif %}
+          {% if blog.comments_enabled? == true %}
+            <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
+            {% else %}
+              The comment function has not been activated.
+          {% endif %}
+        </div>
+        <div class="blog-post-excerpt">
+          <a href="{{ article.url }}">{{ article.excerpt }}... Read more</a>
+        </div>
+      </div>
+    </div>
+{% endfor %}
+    {% endpaginate %}
   </div>
 </div>
 
