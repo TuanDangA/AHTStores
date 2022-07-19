@@ -42,7 +42,7 @@
 
   .breadcrumbs__item:not(:last-child):after {
     content: "/";
-    padding-right: 5px;
+    padding-right: 10px;
   }
 
   .breadcrumbs__link {
