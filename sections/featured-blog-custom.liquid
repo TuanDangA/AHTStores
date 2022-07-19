@@ -14,7 +14,7 @@
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: 3 %}
         <div class="blog-post">
-          <div class="blog-post-{{ forloop.index }} img">
+          <div class="blog-post-img">
             <a href="{{ article.url }}">
               <img src="{{ article.image | img_url: 'medium' }}" alt="">
             </a>
