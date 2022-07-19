@@ -14,7 +14,7 @@
   </div>
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: section.settings.post_num %}
-      <div class="blog-post" {% if condition %}
+      <div class="blog-post" {% if condition %} sty else
         
       {% endif %}>
         <div class="blog-post-img">
