@@ -70,6 +70,11 @@
     font-size: 13px;
 }
 
+.button {
+    color: black;
+    text-decoration: underline;
+}
+
 .paginate {
     text-align: center;
 }
