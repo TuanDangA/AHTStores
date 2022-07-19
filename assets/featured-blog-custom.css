@@ -29,6 +29,7 @@
     min-height: 480px;
     height: auto;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .blog-post {
