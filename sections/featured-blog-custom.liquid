@@ -21,14 +21,14 @@
           </div>
           <div class="blog-post-{{ forloop.index }} content">
             <div class="blog-post-{{ forloop.index }} title">
-              <a href="{{ article.url }}"></a>{{ article.title }}
+              <a href="{{ article.url }}">{{ article.title }}</a>
             </div>
             <div class="blog-post-{{ forloop.index }} sub_title">
               {{ article.created_at }}
               {{ article.comments_count }} comments
             </div>
             <div class="blog-post-{{ forloop.index }} excerpt">
-              <a href="{{ article.url }}"></a>{{ article.excerpt }}</a>
+              <a href="{{ article.url }}">{{ article.excerpt }}</a>
             </div>
           </div>
         </div>
