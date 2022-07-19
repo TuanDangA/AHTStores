@@ -42,7 +42,9 @@
         </div>
       {% endfor %} 
     </div>
-    {{- paginate | default_pagination }}    
+    <div class="paginate">
+      {{- paginate | default_pagination }}    
+    </div>
   {% endpaginate %}
 </div>
 
