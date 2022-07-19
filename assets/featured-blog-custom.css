@@ -1,7 +1,7 @@
 .featured-blog-custom {
     margin: auto;
     width: 90%;
-    height: auto;
+    height: 5vh;
     max-width: 1110px;
     display: flex;
     flex-direction: column;
