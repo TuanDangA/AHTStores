@@ -33,7 +33,7 @@
 
 .blog-post {
     width: 31.5%;
-    height: 100%;
+    height: auto;
 }
 
 .blog-post-img {
