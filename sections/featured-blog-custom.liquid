@@ -34,7 +34,9 @@
           </div>
           <div class="blog-post-excerpt">
             {% if article.excerpt != null or article.content != null %}
-              
+              {% if article.excerpt  %}
+                
+              {% endif %}
             {% endif %}
             <a class="read_more" href="{{ article.url }}">Read more...</a>
           </div>
