@@ -27,7 +27,9 @@
               {{ article.created_at }}
               {{ article.comments_count }} comments
             </div>
-            {{ article.excerpt }}
+            <div class="blog-post-{{ forloop.index }} excerpt">
+              {{ article.excerpt }}
+            </div>
           </div>
         </div>
     {% endfor %}
