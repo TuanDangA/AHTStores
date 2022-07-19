@@ -15,5 +15,5 @@
 .featured-blog-custom-posts{
     width: 100%;
     display: flex;
-    fl
+    flex-direction: row;
 }
