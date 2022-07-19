@@ -12,7 +12,7 @@
     {% endif %}
   </div>
   <div class="featured-blog-custom-posts">
-    {% for blog in section.blocks %}
+    {% for article in section.blocks %}
       
     {% endfor %}
   </div>
@@ -54,24 +54,9 @@
       "label": "Blog post"
     }
   ],
-  "blocks": [
-    {
-      "type": "post",
-      "name": "Blog post",
-      "limit": 3,
-      "settings": [
-        
-      ]
-    }
-  ],
   "presets": [
     {
-      "name": "Featured blog custom",
-      "blocks": [
-        {
-          "type": "post"
-        }
-      ]
+      "name": "Featured blog custom"
     }
   ]
 }
