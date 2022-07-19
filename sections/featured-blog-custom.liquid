@@ -32,8 +32,8 @@
               <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
             {% endif %}
           </div>
-          <div class="blog-post-excerpt">
             {% if article.excerpt != null or article.content != null %}
+            <div class="blog-post-excerpt">
               {% if article.excerpt != null %}
                 <a href="{{ article.url }}">{{ article.excerpt }}</a><br>
                 {%- else -%}
