@@ -13,10 +13,11 @@
   </div>
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: 3 %}
-      <a href="{{ article.url }}">
         <div class="blog-post">
           <div class="blog-post-{{ forloop.index }} img">
-            <img src="{{ article.image | img_url: 'medium' }}" alt="">
+            <a href="{{ article.url }}">
+              <img src="{{ article.image | img_url: 'medium' }}" alt="">
+            </a>
           </div>
           <div class="blog-post-{{ forloop.index }} content">
             {{ article.title }}
