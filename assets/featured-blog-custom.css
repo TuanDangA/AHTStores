@@ -10,7 +10,8 @@
 .featured-blog-custom-header {
     text-align: center;
     width: 100%;
-    font-size: 4vw;
+    font-size: 3vw;
+    font-weight: 600;
 }
 
 .featured-blog-custom-sub-header {
