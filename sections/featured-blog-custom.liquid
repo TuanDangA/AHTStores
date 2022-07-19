@@ -1,0 +1,58 @@
+
+{% schema %}
+{
+  "name": "Featured blogs custom",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Blog posts",
+      "label": "t:sections.featured-blog.settings.heading.label"
+    },
+    {
+      "type": "text",
+      "id": "sub_heading",
+      "default": "section sub heading",
+      "label": "Sub heading"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_date.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_author",
+      "default": true,
+      "label": "t:sections.featured-blog.settings.show_author.label"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "post",
+      "name": "Blog post",
+      "limit": 3,
+      "settings": [
+        {
+            "type": "blog",
+            "id": "post",
+            "label": "Blog post"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Featured blog custom",
+      "blocks": [
+        {
+          "type": "post"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
