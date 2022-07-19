@@ -60,3 +60,7 @@
     text-decoration: underline;
   }
 
+  .breadcrumbs__link:visited {
+    color: #9c9c9c;
+  }
+
