@@ -29,7 +29,7 @@
               {% if section.settings.show_date == true %}
                 <i class="fa-solid fa-calendar"></i> &nbsp; {{ article.created_at | date: "%b %d, %Y" }} &emsp;
               {% endif %}
-                {% if blog.comments_enabled? == true %}
+                {% if section.settings.blog.comments_enabled? == true %}
                   <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
                   {% else %}
                     The comment function has not been activated.
