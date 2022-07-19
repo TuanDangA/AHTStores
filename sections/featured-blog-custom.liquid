@@ -13,7 +13,7 @@
     {% endif %}
   </div>
   {% paginate section.settings.blog.articles by 3 %}
-  <div class="featured-blog-custom-posts">
+    <div class="featured-blog-custom-posts">
       {% for article in section.settings.blog.articles %}
         <div class="blog-post">
           <div class="blog-post-img">
@@ -41,7 +41,7 @@
           </div>
         </div>
       {% endfor %} 
-  </div>
+    </div>
   {{- paginate | default_pagination }}    
   {% endpaginate %}
 </div>
