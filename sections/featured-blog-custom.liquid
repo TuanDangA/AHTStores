@@ -7,7 +7,10 @@
     {% endif %}
   </div>
   <div class="featured-blog-custom-sub-header">
-    
+    {% if section.settings.sub_heading != blank %}
+      {{ section.settings.sub_heading }}
+    {% endif %}
+  </div>
   </div>
   <div class="featured-blog-custom-posts">
 
