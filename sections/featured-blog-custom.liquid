@@ -20,7 +20,9 @@
             </a>
           </div>
           <div class="blog-post-{{ forloop.index }} content">
-            {{ article.title }}
+            <div class="title">
+              {{ article.title }}
+            </div>
             {{ article.created_at }}
             {{ article.comments_count }} comments
             {{ article.excerpt }}
