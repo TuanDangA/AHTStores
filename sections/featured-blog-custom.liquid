@@ -13,14 +13,16 @@
   </div>
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: 3 %}
-      <div class="blog-post-{{ forloop.index }}">
-        <div class="blog-post-{{ forloop.index }} img">
-          {{ article.image }}
+      <a href="">
+        <div class="blog-post-{{ forloop.index }}">
+          <div class="blog-post-{{ forloop.index }} img">
+            {{ article.image }}
+          </div>
+          <div class="blog-post-{{ forloop.index }} content">
+            
+          </div>
         </div>
-        <div class="blog-post-{{ forloop.index }} content">
-          
-        </div>
-      </div>
+      </a>
     {% endfor %}
   </div>
 </div>
