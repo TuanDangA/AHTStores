@@ -37,7 +37,7 @@
               {% if article.excerpt != null %}
                 <a href="{{ article.url }}">{{ article.excerpt }}</a><br>
                 {%- else -%}
-                  
+                  <a href="{{ article.url }}">{{ article.content }}</a><br>
               {% endif %}
             {% endif %}
             <a class="read_more" href="{{ article.url }}">Read more...</a>
