@@ -50,22 +50,44 @@
       "settings": {
       }
     },
-    "form": {
+    "165822545553c98326": {
       "type": "contact-form",
       "blocks": {
-        "736f3f90-7704-435a-8574-c7b515582589": {
+        "1658225455378ff193-0": {
           "type": "notes",
           "settings": {
-            "note_1": "Get in touch with us",
-            "note_2": "Way is there to get clothing you’re sure to love than by making it your know"
+            "note_1": "",
+            "note_2": ""
           }
         }
       },
       "block_order": [
-        "736f3f90-7704-435a-8574-c7b515582589"
+        "1658225455378ff193-0"
       ],
       "settings": {
-        "heading": "",
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "165822549815c4c8c9": {
+      "type": "contact-form",
+      "blocks": {
+        "16582254985464c785-0": {
+          "type": "notes",
+          "settings": {
+            "note_1": "",
+            "note_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "16582254985464c785-0"
+      ],
+      "settings": {
+        "heading": "Contact form",
         "heading_size": "h1",
         "color_scheme": "background-1",
         "padding_top": 36,
@@ -77,6 +99,7 @@
     "main",
     "16577766359289077c",
     "16577804038f245268",
-    "form"
+    "165822545553c98326",
+    "165822549815c4c8c9"
   ]
 }
