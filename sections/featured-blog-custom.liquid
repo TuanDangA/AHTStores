@@ -16,7 +16,7 @@
       <a href="{{ article.url }}">
         <div class="blog-post-{{ forloop.index }}">
           <div class="blog-post-{{ forloop.index }} img">
-            {{ article.image }}
+            {{ article.image | img_url: 'medium' }}
           </div>
           <div class="blog-post-{{ forloop.index }} content">
             {{ article.title }}
