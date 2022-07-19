@@ -41,7 +41,8 @@
   }
 
   .breadcrumbs__item:not(:last-child):after {
-    content: "/  ";
+    content: "/";
+    padding-right: 5px;
   }
 
   .breadcrumbs__link {
