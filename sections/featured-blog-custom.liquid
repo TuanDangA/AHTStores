@@ -14,7 +14,8 @@
   </div>
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: section.settings.post_num %}
-      <div class="blog-post" {% if condition %} sty else
+      <div class="blog-post" {% if condition %} style="    width: 32.5%;
+      " else
         
       {% endif %}>
         <div class="blog-post-img">
