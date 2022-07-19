@@ -39,7 +39,7 @@
 
 .blog-post-img {
     width: 100%;
-    height: 60%;
+    height: 65%;
 }
 
 .blog-post-img img {
@@ -56,4 +56,6 @@
 
 .blog-post-content .blog-post-title a {
     text-decoration: none;
+    color: black;
+    font-size: ;
 }
