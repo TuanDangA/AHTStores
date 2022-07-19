@@ -14,7 +14,9 @@
   </div>
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: section.settings.post_num %}
-      <div class="blog-post" style="">
+      <div class="blog-post" {% if condition %}
+        
+      {% endif %}>
         <div class="blog-post-img">
           <a href="{{ article.url }}">
             <img src="{{ article.image | img_url: 'medium' }}" alt="">
