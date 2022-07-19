@@ -32,16 +32,16 @@
               <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
             {% endif %}
           </div>
-            {% if article.excerpt != null or article.content != null %}
+          {% if article.excerpt != null or article.content != null %}
             <div class="blog-post-excerpt">
               {% if article.excerpt != null %}
                 <a href="{{ article.url }}">{{ article.excerpt }}</a><br>
                 {%- else -%}
                   <a href="{{ article.url }}">{{ article.content }}</a><br>
               {% endif %}
-            {% endif %}
-            <a class="read_more" href="{{ article.url }}">Read more...</a>
-          </div>
+              <a class="read_more" href="{{ article.url }}">Read more...</a>
+            </div>
+          {% endif %}
         </div>
       </div>
     {% endfor %} 
