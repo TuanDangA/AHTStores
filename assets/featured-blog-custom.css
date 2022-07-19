@@ -9,4 +9,5 @@
 
 .featured-blog-custom-header, .featured-blog-custom-sub-header {
     text-align: center;
+    width: 100%;
 }
