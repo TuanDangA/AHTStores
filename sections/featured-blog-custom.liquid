@@ -30,6 +30,8 @@
               {% endif %}
               {% if blog.comments_enabled? == true %}
                 <i class="fa-solid fa-comment"></i> &nbsp; {{ article.comments_count }} {% if article.comments_count <= 1 %} comment {% else %} comments {% endif %}
+                {% else %}
+                  The comment 
               {% endif %}
             </div>
             <div class="blog-post-excerpt">
