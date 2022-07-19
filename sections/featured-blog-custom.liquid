@@ -13,7 +13,7 @@
     {% endif %}
   </div>
   <div class="featured-blog-custom-posts">
-    {% for article in section.settings.blog.articles limit: 3 %}
+    {% for article in section.settings.blog.articles limit: section.settings.post_num %}
       <div class="blog-post">
         <div class="blog-post-img">
           <a href="{{ article.url }}">
