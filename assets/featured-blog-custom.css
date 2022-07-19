@@ -55,7 +55,7 @@
 
 .blog-post-content .blog-post-title a {
     text-decoration: none;
-    color: black;
+    color: #080707;
     font-size: 25px;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .blog-post-excerpt .read_more {
-    color: black;
+    color: #080707;
     text-decoration: underline;
     background: none;
 }
