@@ -441,6 +441,7 @@
     },
     "165803183497ca8f6a": {
       "type": "collection-list-custom",
+      "disabled": true,
       "blocks": {
         "1658031834a95ec361-0": {
           "type": "featured_collection",
@@ -473,6 +474,7 @@
     },
     "16582001923abed72b": {
       "type": "featured-blog-custom",
+      "disabled": true,
       "settings": {
         "heading": "From Our Blog",
         "sub_heading": "Way is there to get clothing you’re sure to love than by making it",
