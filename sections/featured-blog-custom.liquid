@@ -13,7 +13,9 @@
   </div>
   <div class="featured-blog-custom-posts">
     {% for article in section.settings.blog.articles limit: 3 %}
-      .blog-post-{{ forloop.index }}
+      <div class="blog-post-{{ forloop.index }}">
+
+      </div>
     {% endfor %}
   </div>
 </div>
