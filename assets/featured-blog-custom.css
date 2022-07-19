@@ -68,3 +68,7 @@
     color: gray;
     font-size: 13px;
 }
+
+.paginate {
+    text-align: center;
+}
