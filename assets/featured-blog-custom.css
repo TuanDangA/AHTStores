@@ -70,7 +70,7 @@
     font-size: 13px;
 }
 
-.read_more {
+.blog-post-excerpt .read_more {
     color: black;
     text-decoration: underline;
     background: none;
