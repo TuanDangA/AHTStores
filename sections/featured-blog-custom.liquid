@@ -34,8 +34,10 @@
           </div>
           <div class="blog-post-excerpt">
             {% if article.excerpt != null or article.content != null %}
-              {% if article.excerpt  %}
-                
+              {% if article.excerpt != null %}
+                <a href="{{ article.url }}">{{ article.excerpt }}</a><br>
+                {%- else -%}
+                  
               {% endif %}
             {% endif %}
             <a class="read_more" href="{{ article.url }}">Read more...</a>
