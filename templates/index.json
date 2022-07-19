@@ -473,29 +473,12 @@
     },
     "16582001923abed72b": {
       "type": "featured-blog-custom",
-      "blocks": {
-        "1658200192c2b14f19-0": {
-          "type": "post",
-          "settings": {
-            "post": "news"
-          }
-        },
-        "aa73619a-2bf3-4664-8af2-770ebb248039": {
-          "type": "post",
-          "settings": {
-            "post": "news_2"
-          }
-        }
-      },
-      "block_order": [
-        "1658200192c2b14f19-0",
-        "aa73619a-2bf3-4664-8af2-770ebb248039"
-      ],
       "settings": {
         "heading": "Blog post",
         "sub_heading": "section sub heading",
         "show_date": true,
-        "show_author": true
+        "show_author": true,
+        "blog": "news"
       }
     }
   },
