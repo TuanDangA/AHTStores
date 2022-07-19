@@ -42,5 +42,8 @@
 }
 
 .blog-post-content{
-
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
 }
