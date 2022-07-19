@@ -12,7 +12,6 @@
       {{ section.settings.sub_heading }}
     {% endif %}
   </div>
-  {% paginate section.settings.blog.articles by 3 %}
     <div class="featured-blog-custom-posts">
       {% for article in section.settings.blog.articles %}
         <div class="blog-post">
@@ -42,12 +41,6 @@
         </div>
       {% endfor %} 
     </div>
-    <div class="paginate">
-      {%- if paginate.pages > 1 -%}
-        {%- render 'pagination', paginate: paginate -%}
-      {%- endif -%}
-    </div>
-  {% endpaginate %}
 </div>
 
 {% schema %}
