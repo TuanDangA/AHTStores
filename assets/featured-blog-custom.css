@@ -54,6 +54,6 @@
     flex-direction: column;
 }
 
-.blog-post-titlea{
+.blog-post-title a {
     text-decoration: none;
 }
