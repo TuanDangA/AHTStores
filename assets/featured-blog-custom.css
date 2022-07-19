@@ -28,11 +28,9 @@
     flex-direction: row;
     height: 480px;
     justify-content: space-between;
-    border: 1px solid black;
 }
 
 .blog-post {
-    border: 1px solid black;
     width: 31.5%;
     height: 100%;
 }
