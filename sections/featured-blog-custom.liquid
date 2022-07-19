@@ -15,10 +15,10 @@
     {% for article in section.settings.blog.articles limit: 3 %}
       <div class="blog-post-{{ forloop.index }}">
         <div class="blog-post-{{ forloop.index }} img">
-          {{ }}
+          {{ article.image }}
         </div>
         <div class="blog-post-{{ forloop.index }} content">
-
+          
         </div>
       </div>
     {% endfor %}
