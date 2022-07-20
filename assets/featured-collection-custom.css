@@ -59,6 +59,11 @@
     flex-direction: row;
 }
 
+.product-vars {
+    width: auto;
+    height: auto;
+}
+
 .dot {
     height: 25px;
     width: 25px;
