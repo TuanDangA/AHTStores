@@ -27,13 +27,15 @@
             </a>
           </div>
           <div class="product-variables">
-            {% if product.compare_at_price != null %}
-              <div class="compare-at-price">
-                <a href="{{ product.url }}">{{ product.compare_at_price | money_without_trailing_zeros }}</a>
+            <div class="product-prices">
+              {% if product.compare_at_price != null %}
+                <div class="compare-at-price">
+                  <a href="{{ product.url }}">{{ product.compare_at_price | money_without_trailing_zeros }}</a>
+                </div>
+              {% endif %}
+              <div class="current-price">
+                <a href="{{ product.url }}">{{ product.price | money_without_trailing_zeros }}</a>
               </div>
-            {% endif %}
-            <div class="current-price">
-              <a href="{{ product.url }}">{{ product.price | money_without_trailing_zeros }}</a>
             </div>
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
