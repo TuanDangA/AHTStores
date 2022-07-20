@@ -60,6 +60,12 @@
     font-weight: 400
 }
 
+.product-ratings a {
+    text-decoration: none;
+    color: black;
+    font-size: 10px;
+}
+
 .product-variables {
     display: flex;
     flex-direction: row;
