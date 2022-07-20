@@ -60,6 +60,11 @@
     justify-content: space-between;
 }
 
+.product-prices {
+    display: flex;
+    flex-direction: row;
+}
+
 .product-vars {
     width: auto;
     height: 25px;
