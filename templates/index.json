@@ -483,6 +483,33 @@
         "post_num": 3,
         "blog": "news"
       }
+    },
+    "1658285717d15b1556": {
+      "type": "featured-collection-custom",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "collection-b",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -498,6 +525,7 @@
     "1657164679061e55d6",
     "1657719987b9a84edf",
     "165803183497ca8f6a",
-    "16582001923abed72b"
+    "16582001923abed72b",
+    "1658285717d15b1556"
   ]
 }
