@@ -5,7 +5,7 @@
     <div class="featured-collection-custom-header">
       {{ section.settings.heading }}
     </div>
-    {% if condition %}
+    {% if section.settings.heading != blank %}
       <div class="featured-collection-custom-sub-header">
         {{ section.settings.sub_heading }}
       </div>
