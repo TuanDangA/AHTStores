@@ -80,10 +80,16 @@
     justify-content: left;
 }
 
-.product-prices .compare_at_price a {
+.product-prices .compare-at-price a {
     text-decoration: line-through;
     color: gray;
     margin-right: 10px;
+    font-weight: 600;
+}
+
+.product-prices .current-price a {
+    text-decoration: none;
+    color: black;
     font-weight: 600;
 }
 
