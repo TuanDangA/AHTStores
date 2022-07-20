@@ -56,7 +56,7 @@
   <script type="text/javascript">
     function chooseVariant(id){
       var image = document.getElementById(id);
-      $('#product-image-id').attr("src", image.getAttribute("data-image"));
+      $('#product-image-'+id).attr("src", image.getAttribute("data-image"));
     }
   </script>
 </div>
