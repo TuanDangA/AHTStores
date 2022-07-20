@@ -29,7 +29,7 @@
             </div>
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
-                {% for variable in collection %}
+                {% for variable in product.variants %}
                   
                 {% endfor %}
               </div>
