@@ -1,4 +1,4 @@
-function chooseVariant(product, title){
+function chooseVariant(product, variant){
     var image = document.getElementsByClassName("product-image");
 
 }
