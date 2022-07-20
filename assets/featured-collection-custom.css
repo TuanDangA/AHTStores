@@ -80,7 +80,12 @@
     justify-content: left;
 }
 
-.
+.product-prices .compare_at_price {
+    text-decoration: line-through;
+    color: gray;
+    margin-right: 10px;
+    font-weight: 600;
+}
 
 .product-vars {
     width: 50%;
