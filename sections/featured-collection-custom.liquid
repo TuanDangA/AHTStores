@@ -41,7 +41,7 @@
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
                 {% for variant in product.variants %}
-                  <button class="dot" style="background-color: {{ variant.title }};" data-image="{{ variant.image | image_url: width: 1 }}" onclick="chooseVariant({{ product.variants | json }}, {{ variant.title }})"></button>
+                  <button class="dot" style="background-color: {{ variant.title }};" data-image="{{ variant.image | image_url: width: 350, height: 350 }}" onclick="chooseVariant()"></button>
                 {% endfor %}
               </div>
             {% endif %}
@@ -51,8 +51,7 @@
     {% endfor %}
   </div>
   <script type="text/javascript">
-    function chooseVariant(variants, title){
-      console.log(variants,title);
+    function chooseVariant(){
       console.log(1);
       // var image = document.getElementsByClassName("product-image-{{ product.id }}");
       // for (let index = 0; index < product.variants.lengt; index++) {
