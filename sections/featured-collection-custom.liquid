@@ -5,9 +5,11 @@
     <div class="featured-collection-custom-header">
       {{ section.settings.heading }}
     </div>
-    <div class="featured-collection-custom-sub-header">
-
-    </div>
+    {% if condition %}
+      <div class="featured-collection-custom-sub-header">
+        {{ section.settings.sub_heading }}
+      </div>
+    {% endif %}
   </div>
   <div class="featured-collection-custom-content">
 
