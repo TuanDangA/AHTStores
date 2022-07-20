@@ -71,6 +71,9 @@
 .product-vars {
     width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
 }
 
 .product-vars .dot {
