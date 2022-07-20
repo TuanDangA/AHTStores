@@ -57,10 +57,12 @@
 .product-variables {
     display: flex;
     flex-direction: row;
+    width: 100%;
     justify-content: space-between;
 }
 
 .product-prices {
+    width: 40%;
     display: flex;
     flex-direction: row;
 }
