@@ -57,7 +57,7 @@
 .product-variables {
     display: flex;
     flex-direction: row;
-    justify-content: ;
+    justify-content: space-between;
 }
 
 .product-vars {
