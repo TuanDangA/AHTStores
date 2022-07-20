@@ -54,6 +54,12 @@
     flex-direction: column;
 }
 
+.product-title a {
+    text-decoration: none;
+    color: black;
+    font-weight: 400
+}
+
 .product-variables {
     display: flex;
     flex-direction: row;
