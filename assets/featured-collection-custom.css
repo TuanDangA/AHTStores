@@ -7,6 +7,13 @@
     flex-direction: column;
 }
 
+.featured-collection-custom-header {
+    text-align: center;
+    width: 100%;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
 
 
 
