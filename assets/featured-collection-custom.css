@@ -34,6 +34,7 @@
 
 .product {
     height: auto;
+    border: 1px solid black;
 }
 
 .product-image {
