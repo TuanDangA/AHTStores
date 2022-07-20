@@ -1,5 +1,5 @@
 function chooseVariant(product, variant){
-    console.log()
+    console.log(product | )
     // var image = document.getElementsByClassName("product-image-{{ product.id }}");
     // for (let index = 0; index < product.variants.lengt; index++) {
     //     if (product.variants[i].title == variant.title) {
