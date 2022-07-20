@@ -50,7 +50,9 @@
       </div>
     {% endfor %}
   </div>
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    {{ product | json }}
+  </script>
 </div>
 
 {% schema %}
