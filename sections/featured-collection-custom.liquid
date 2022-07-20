@@ -57,6 +57,7 @@
     function chooseVariant(id_variant, id_product){
       console.log(1);
       var image = document.getElementById(id_variant);
+      console.log(image);
       $('#product-image-'+id_product).attr("src", image.getAttribute("data-image"));
     }
   </script>
