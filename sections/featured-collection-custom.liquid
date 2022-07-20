@@ -41,7 +41,7 @@
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
                 {% for variant in product.variants %}
-                  <button class="dot" style="background-color: {{ variant.title }};" data-image="{{ variant.image | image_url }}" onclick="chooseVariant({{ product.variants | json }}, {{ variant.title }})"></button>
+                  <button class="dot" style="background-color: {{ variant.title }};" data-image="{{ variant.image | image_url: width: 1 }}" onclick="chooseVariant({{ product.variants | json }}, {{ variant.title }})"></button>
                 {% endfor %}
               </div>
             {% endif %}
