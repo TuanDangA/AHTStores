@@ -41,7 +41,7 @@
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
                 {% for variable in product.variants %}
-                  <div class="dot" style="background-color: {{ variable.title }};" onclick="chooseVariant({{ variable.title }},{{ product.id }})"></div>
+                  <div class="dot" style="background-color: {{ variable.title }};" onclick="chooseVariant({{ product }}, {{ }})"></div>
                 {% endfor %}
               </div>
             {% endif %}
