@@ -41,7 +41,7 @@
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
                 {% for variant in product.variants %}
-                  <button class="dot" style="background-color: {{ variant.title }};" data-image="{{ variant.image | image_url: width: 350, height: 350 }}" onclick="chooseVariant()"></button>
+                  <button class="dot" style="background-color: {{ variant.title }};" data-image="{{ variant.image | image_url: width: 350, height: 350 }}" onclick="chooseVariant({{ product }})"></button>
                 {% endfor %}
               </div>
             {% endif %}
@@ -53,7 +53,7 @@
   <script type="text/javascript">
     function chooseVariant(id){
       console.log(1);
-      var image = document.getElementsById("product-image-id");
+      var image = document.getElementsById(id);
       // for (let index = 0; index < product.variants.lengt; index++) {
       //     if (product.variants[i].title == variant.title) {
       //         image.innerHTML = "<a href='{{ product.url }}'><img src='{{ product.variants[i].featured_image | img_url }}' alt=''></a>";
