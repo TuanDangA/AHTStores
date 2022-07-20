@@ -26,7 +26,10 @@
           <div class="product-variables">
             <div class="product-price">
               {% if product.compare_at_price != null %}
-                .compare_at_price
+                <div class="compare-at-price">
+                  
+                </div>
+
               {% endif %}
               {{ product.price | money_without_trailing_zeros }}
             </div>
