@@ -54,6 +54,11 @@
     flex-direction: column;
 }
 
+.product-variables {
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
