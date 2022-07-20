@@ -15,7 +15,7 @@
   <div class="featured-collection-custom-content">
     {% for product in section.settings.collection.products %}
       <div class="product" style="width: 24%;">
-        <div class="product-image product-image-{{ product.id }}">
+        <div class="product-image" id="product-image-{{ product.id }}">
           <a href="{{ product.url }}"><img src="{{ product.featured_image | image_url }}" alt=""></a>
         </div>
         <div class="product-info">
@@ -53,7 +53,7 @@
   <script type="text/javascript">
     function chooseVariant(){
       console.log(1);
-      // var image = document.getElementsByClassName("product-image-{{ product.id }}");
+      var image = document.getElementsByClassName("product-image-{{ product.id }}");
       // for (let index = 0; index < product.variants.lengt; index++) {
       //     if (product.variants[i].title == variant.title) {
       //         image.innerHTML = "<a href='{{ product.url }}'><img src='{{ product.variants[i].featured_image | img_url }}' alt=''></a>";
