@@ -80,7 +80,7 @@
     justify-content: left;
 }
 
-.product-prices .compare_at_price {
+.product-prices .compare_at_price a {
     text-decoration: line-through;
     color: gray;
     margin-right: 10px;
