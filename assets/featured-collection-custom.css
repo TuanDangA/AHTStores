@@ -71,7 +71,7 @@
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
-    align
+    align-items: center;
 }
 
 .product-prices {
