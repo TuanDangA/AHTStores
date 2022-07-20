@@ -69,13 +69,13 @@
 }
 
 .product-vars {
-    width: auto;
+    width: 50%;
     height: 25px;
 }
 
 .product-vars .dot {
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     border-radius: 50%;
     display: inline-block;
 }
