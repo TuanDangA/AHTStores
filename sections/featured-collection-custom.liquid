@@ -27,11 +27,10 @@
             <div class="product-price">
               {% if product.compare_at_price != null %}
                 <div class="compare-at-price">
-                  
-                </div>
 
+                </div>
               {% endif %}
-              {{ product.price | money_without_trailing_zeros }}
+              
             </div>
             {% if product.has_only_default_variant == false %}
               <div class="product-vars">
