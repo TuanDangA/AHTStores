@@ -59,6 +59,10 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
+    .container_contact_details{
+        p
+    }
+
     .info_details{
         flex-direction: column;
         align-items: center;
