@@ -35,6 +35,7 @@
 .product {
     height: auto;
     max-height: 350px;
+    width: 24%;
 }
 
 .product-image {
