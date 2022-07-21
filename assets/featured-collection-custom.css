@@ -37,6 +37,7 @@
     height: auto;
     max-height: 320px;
     border: 1px solid black;
+    width: 24%;
 }
 
 .product-image {
