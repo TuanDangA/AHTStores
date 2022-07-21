@@ -25,7 +25,7 @@
           {% if product.compare_at_price != blank %}
             <div class="product-discount">
                -(({{ product.compare_at_price }}-{{ product.price }}) / {{ product.compare_at_price}})%
-               -{{ product.compare_at_price | minus: product.price}}
+               -{{ product.compare_at_price | minus: product.price | multi }}
             </div>
           {% endif %}
         </div>
