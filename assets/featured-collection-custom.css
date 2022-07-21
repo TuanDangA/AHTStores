@@ -79,7 +79,9 @@
 .product-discount {
     background-color: #eb4034;
     height: 30px;
-    width: ;
+    width: 60px;
+    position: absolute;
+    
 }
 
 .product-info {
