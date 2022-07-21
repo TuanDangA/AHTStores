@@ -8,6 +8,9 @@
 }
 
 .heading {
+    display: flex;
+    flex-direction: column;
+    ju
     width: 100%;
     height: auto;
     text-align: center;
