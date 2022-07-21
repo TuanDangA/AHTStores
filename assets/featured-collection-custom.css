@@ -58,6 +58,10 @@
     height: 100%;
 }
 
+.image-container a {
+    
+}
+
 .image-container img {
     display: block;
     width: 100%;
