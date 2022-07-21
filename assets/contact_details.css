@@ -60,7 +60,7 @@ iframe {
 
 @media screen and (max-width: 767px) {
     .container_contact_details{
-        p
+        padding: 0 15px;
     }
 
     .info_details{
