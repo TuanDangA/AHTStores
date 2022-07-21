@@ -38,6 +38,7 @@
     max-height: 320px;
     border: 1px solid black;
     width: 24%;
+    margin-top: 10px;
 }
 
 .product-image {
