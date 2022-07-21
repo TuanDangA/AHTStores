@@ -81,7 +81,9 @@
     height: 30px;
     width: 60px;
     position: absolute;
-    
+    top: 0;
+    left: 0;
+    z-index: 2;
 }
 
 .product-info {
