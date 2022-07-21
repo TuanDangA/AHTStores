@@ -22,8 +22,10 @@
           <div class="image-container">
             <a href="{{ product.url }}"><img id="product-image-{{ product.id }}" src="{{ product.featured_image | image_url }}" alt=""></a>
           </div>
-          {% if condition %}
-            
+          {% if product.compare_at_price != blank %}
+            <div class="product-discount">
+              
+            </div>
           {% endif %}
         </div>
         <div class="product-info">
