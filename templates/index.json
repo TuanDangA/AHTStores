@@ -474,7 +474,6 @@
     },
     "16582001923abed72b": {
       "type": "featured-blog-custom",
-      "disabled": true,
       "settings": {
         "heading": "From Our Blog",
         "sub_heading": "Way is there to get clothing you’re sure to love than by making it",
@@ -486,10 +485,12 @@
     },
     "1658285717d15b1556": {
       "type": "featured-collection-custom",
+      "disabled": true,
       "settings": {
         "heading": "Trendy Clothing",
         "sub_heading": "Way is there to get clothing you’re sure to love than by making it",
-        "collection": "clothings"
+        "collection": "clothings",
+        "distance_between_items": 0
       }
     }
   },
