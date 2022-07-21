@@ -10,7 +10,7 @@
 .featured-blog-custom-header {
     text-align: center;
     width: 100%;
-    font-size: 3vw;
+    font-size: 3vmax;
     font-weight: 600;
 }
 
@@ -18,8 +18,8 @@
     text-align: center;
     width: 100%;
     height: auto;
-    font-size: 1.3vw;
-    margin-bottom: 5vh;
+    font-size: 1.3vmax;
+    margin-bottom: 5vmin;
 }
 
 .featured-blog-custom-posts{
