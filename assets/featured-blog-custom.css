@@ -33,7 +33,7 @@
 
 .blog-post {
     height: auto;
-    max-height: 350px;
+    max-height: 400px;
 }
 
 .blog-post-img {
@@ -83,3 +83,5 @@
 .pagination-wrapper {
     margin-top: 0px !important;
 }
+
+
