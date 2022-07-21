@@ -119,7 +119,7 @@
 
 .product-prices .compare-at-price a {
     text-decoration: line-through;
-    color: gray;
+    color: #787575;
     margin-right: 10px;
     font-weight: 600;
 }
