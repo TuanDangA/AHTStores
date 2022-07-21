@@ -33,7 +33,7 @@
 
 .blog-post {
     height: auto;
-    m
+    max-height: 350px;
 }
 
 .blog-post-img {
