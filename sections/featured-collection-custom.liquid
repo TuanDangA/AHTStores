@@ -17,7 +17,7 @@
   {% endif %}
   <div class="featured-collection-custom-content">
     {% for product in section.settings.collection.products %}
-      <div class="product" {%- if condition -%}
+      <div class="product" {%- if section.settings.item_number_allowed  -%}
         
       {%- endif -%}>
         <div class="product-image">
