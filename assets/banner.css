@@ -34,7 +34,7 @@
     text-align: center;
 }
 
-.header {
+.banner-header {
     display: flex;
     flex-direction: column;
 }
