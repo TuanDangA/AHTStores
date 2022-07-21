@@ -5,20 +5,21 @@
     max-width: 1110px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .featured-collection-custom-header {
     text-align: center;
     width: 100%;
-    font-size: 2.5vw;
+    font-size: 2.5vmax;
     font-weight: 600;
 }
 
 .featured-collection-custom-sub-header {
     text-align: center;
-    width: 100%;
+    width: 80%;
     height: auto;
-    font-size: 1.3vw;
+    font-size: 1.3vmax;
     margin-bottom: 5vh;
 }
 
