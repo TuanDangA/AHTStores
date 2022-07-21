@@ -56,8 +56,8 @@
     {% endfor %}
   </div>
   <script type="text/javascript">
-    function chooseVariant(title, id_product){
-      var image = document.getElementById(title);
+    function chooseVariant(id, id_product){
+      var image = document.getElementById(id);
       $('#product-image-'+id_product).attr("src", image.getAttribute("data-image"));
     }
   </script>
