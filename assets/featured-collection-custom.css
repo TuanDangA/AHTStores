@@ -62,6 +62,7 @@
     display: block;
     position: relative;
     padding-bottom: 100%;
+    overflow: hidden;
 }
 
 .image-container img {
