@@ -139,8 +139,8 @@
 }
 
 .product-vars .dot {
-    height: 1.5vw;
-    width: 1.5vw;
+    height: 1.5vmax;
+    width: 1.5vmax;
     border-radius: 50%;
     display: inline-block;
     margin-left: 0.5vw;
