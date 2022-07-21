@@ -92,13 +92,13 @@
 
 .product-title a {
     text-decoration: none;
-    color: black;
+    color: #0f0f0f;
     font-weight: 400;
 }
 
 .product-ratings a {
     text-decoration: none;
-    color: black;
+    color: #0f0f0f;
     font-size: 10px;
 }
 
