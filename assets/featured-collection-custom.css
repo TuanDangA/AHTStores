@@ -36,6 +36,7 @@
 .product {
     height: auto;
     max-height: 350px;
+    border: 1px solid black;
 }
 
 .product-image {
