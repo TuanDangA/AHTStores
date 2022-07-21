@@ -23,7 +23,8 @@
 }
 
 .heading_line_2{
-    
+    width: 90%;
+    text-align: center;
 }
 
 .phone, .email, .address {
