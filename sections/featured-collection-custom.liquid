@@ -19,7 +19,9 @@
     {% for product in section.settings.collection.products %}
       <div class="product" style="width: 24%;">
         <div class="product-image">
-          <a href="{{ product.url }}"><img id="product-image-{{ product.id }}" src="{{ product.featured_image | image_url }}" alt=""></a>
+          <div class="image-container">
+            <a href="{{ product.url }}"><img id="product-image-{{ product.id }}" src="{{ product.featured_image | image_url }}" alt=""></a>
+          </div>
         </div>
         <div class="product-info">
           <div class="product-title">
