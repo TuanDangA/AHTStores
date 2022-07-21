@@ -60,7 +60,9 @@ iframe {
 }
 
 @media screen and (max-width: 767px) {
-    
+    .info_details{
+        flex-direction: column;
+    }
 }
 
 
