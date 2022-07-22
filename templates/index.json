@@ -493,6 +493,11 @@
         "collection": "clothings",
         "distance_between_items": 0
       }
+    },
+    "165846212307bc116e": {
+      "type": "filter",
+      "settings": {
+      }
     }
   },
   "order": [
@@ -509,6 +514,7 @@
     "1657719987b9a84edf",
     "165803183497ca8f6a",
     "16582001923abed72b",
-    "1658285717d15b1556"
+    "1658285717d15b1556",
+    "165846212307bc116e"
   ]
 }
