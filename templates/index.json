@@ -474,6 +474,7 @@
     },
     "16582001923abed72b": {
       "type": "featured-blog-custom",
+      "disabled": true,
       "settings": {
         "heading": "From Our Blog",
         "sub_heading": "Way is there to get clothing you’re sure to love than by making it",
