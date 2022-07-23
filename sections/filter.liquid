@@ -1,7 +1,4 @@
 <form class="filter-form">
-    {%- for product in collections['clothings'].products -%}
-      {{ product.title}}
-    {% endfor %}
     {%- for filter in collections['clothings'].filters -%}
       <details class="filter-group">
         <summary class="filter-group-summary">
