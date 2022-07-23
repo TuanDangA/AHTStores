@@ -1,6 +1,6 @@
 <form class="filter-form">
     {% for collection in collections %}
-      collection.
+      {{ collection.handle }}
     {% endfor %}
     {%- for filter in collections['clothings'].filters -%}
       <details class="filter-group">
