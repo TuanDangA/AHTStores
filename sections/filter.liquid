@@ -2,6 +2,9 @@
     {% for collection in collections %}
       {{ collection.handle }}
     {% endfor %}
+    {%- for filter in collections['clothings'].products -%}
+      
+    {% endfor %}
     {%- for filter in collections['clothings'].filters -%}
       <details class="filter-group">
         <summary class="filter-group-summary">
